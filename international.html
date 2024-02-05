@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html data-theme="dark ,light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Ambulace Bangladesh</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.jfif">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#header-content").load("./header.html");
+            $("#footer").load("./footer.html");
+        });
+    </script>
+    <style type="text/tailwindcss">
+
+/* .animated-color {
+  width: 100px;
+  height: 100px;
+  color: rgb(255, 255, 255);
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {color: rgb(255, 255, 255);}
+  to {color: rgb(14, 194, 254);}
+} */
+
+
+.animated-color {
+  width: 100px;
+  height: 100px;
+  color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  25%   {color: rgb(49, 247, 72);}
+  25%  {color: yellow;}
+  50%  {color: rgb(49, 179, 249);}
+  100% {color: rgb(255, 255, 255);}
+}
+        .submenu {
+            display: none;
+        }
+
+        :root {
+            --color-primary: #050505;
+            --color-primary-light: #d96cdb;
+            --secondary-color: #0a5c83;
+        }
+
+        /* Show the submenu when hovering over the parent element */
+        .group:hover .submenu {
+            display: block;
+        }
+
+        @keyframes carousel {
+            100% {
+                transform: translateX(-250);
+            }
+        }
+        @layer utilities{
+            .nav::after{
+                @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute
+            }
+            .nav:hover::after{
+                @apply w-[100%]
+            }
+        }
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+
+        .scroll-text {
+            white-space: nowrap;
+            animation: scroll 10s linear infinite;
+        }
+
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            60% {
+                transform: translateX(30%);
+            }
+        }
+
+        .dropdown_item:hover .dropdown_arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body class="bg-black">
+    <div id="header-content"></div>
+    <div w3-include-html="./header.html"></div>
+    <header class=" bg-black p-4 mx-32 hidden lg:block">
+        <div class="container mx-auto text-white flex justify-between">
+             <div>
+                Air Ambulance Bangladesh Ltd
+            </div>
+            <div class="flex gap-3">
+                <div class="">
+                    <ion-icon class="text-white text-center text-2xl" name="mail-outline"></ion-icon>
+                </div>
+                <div>
+                    <a class="text-center" href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+            </div>
+            <div class="gap-2 flex">
+                <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="rounded sticky top-0 z-40 xl:z-50  bg-[var(--color-primary)] border-y-2 border-y-white-100">
+            <div class="flex  gap-4" style="justify-content: center; align-items: center;">
+
+
+                <img class="w-36 h-16 p-2  md:p-0 ml-[10px]" src="./images/logo.jfif" alt="">
+
+           
+
+                <!--  <div style="width: 550%; display: flex; justify-content: center;">
+                <button  class="relative bg-transparent mr-4 pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded"> 
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                    <div class="hidden md:block w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping"></div>
+                    <div class="hidden md:block w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping"></div>
+                </button>
+                </div> -->
+                <div style="width: 550%; display: flex; justify-content: center;">
+                    <button 
+                        class="relative bg-transparent  pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
+                        <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping">
+                        </div>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping">
+                        </div>
+                    </button>
+                </div>
+
+                <div
+                    class="container mx-auto flex justify-end   bg-[var(--color-primary)] rounded-md   text-black xl:text-white ">
+                    <span
+                        class="text-3xl cursor-pointer p-[5px] m-[5px] hover:border-dotted bg-zinc-700 text-white xl:hidden">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+
+                    </span>
+                    <ul
+                        class="uppercase nav1 xl:flex xl:items-center mx-8 p-4 z-[-1]
+                         xl:z-auto xl:static absolute bg-white xl:bg-[var(--color-primary)] w-full 
+                          letf-0 xl:w-auto xl:py-0 my-4 pl-8 xl:pl-0   xl:opacity-100 hidden  xl:text-middle trasition-all easein doration-500 m-[5px] ">
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="index.html">
+                                <p class="whitespace-nowrap">home</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group ">
+                            <a
+                                class="dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 ">
+                                <div class="flex gap-1 ">
+                                    <p class="whitespace-nowrap cursor-pointer">Service</p>
+                                </div> <ion-icon class="dropdown_arrow " name="chevron-up-outline"></ion-icon>
+                            </a>
+
+                            <div style="z-index: 99;"
+                                class="xl:absolute xl:bg-black text-black xl:text-white text-lg  w-64 drop-shadow-md ml-4 xl:ml-auto">
+                                <ul class="space-y-4 xl:w-56 group-hover:block submenu  p-2 ">
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdhaka.html
+                                        ">air ambulance in dhaka</a>
+
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airsingapore.html">air ambulance in Singapore</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airthailand.html">air ambulance in Thailand</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airmalayasia.html">air ambulance in Malayasia</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airindia.html">air ambulance in india</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdomestic.html">air helicopter Domestic</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="aircraft.html">
+                                <p class="whitespace-nowrap">AIRCRAFTS</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="domestic.html">
+                                <p class="whitespace-nowrap">Domestic </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="international.html">
+                                <p class="whitespace-nowrap">International </p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="about.html">
+                                <p class="whitespace-nowrap">about us </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="client.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">client
+                                    <p></p>
+                                </div>
+                            </a>
+
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="blog.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">blog </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group "><a
+                                class="  dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 lg:nav"
+                                href="contact.html">
+                                <p class="whitespace-nowrap">contact us</p>
+                            </a>
+
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </section>
+        <section>
+            <div class="w-full">
+                <div class="relative  h-24 rounded-lg md:h-28 w-full lg:w-full lg:h-[150px] xl:h-[180px] 2xl:h-[200px]">
+                    <img class="h-full w-full" src="./images/img1.jpg" alt="">
+
+                    <div class="absolute inset-0 bg-black opacity-80"></div>
+                    <div class="absolute top-0 text-white text-center mt-4 sm:mt-12 " style="width: 100%;">
+                        <p class="text-2xl md:text-3xl lg:text-6xl font-bold uppercase">Air Ambulance in International</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="mt-4 container mx-auto ">
+            <div class="grid grid-cols-1 lg:grid-cols-2 p-10 gap-4">
+                <div>
+                    <div class="text-white text-center font-sans ">
+                        <h1 class="text-4xl text-left">Our Global Air Ambulance Flight Service: The Quickest Route to Swift Hospital Access</h1>
+                        <p class="text-justify mt-8 text-xl">For those in the medical profession requiring ambulance
+                            services, having a dependable and cost-effective flight service is crucial. This is where
+                            our international air ambulance service plays a vital role. We offer swift and secure
+                            transportation to hospitals worldwide, allowing you to concentrate on your medical duties.
+                            An air ambulance service is ideal for ensuring urgent medical assistance.</p>
+                    </div>
+                    <div class="text-white text-center font-sans ">
+                        <h1 class="text-4xl text-left mt-12">What Does Our Air Ambulance Service Entail?</h1>
+                        <p class="text-justify mt-6 text-xl">In medical emergencies, our air ambulance service serves as
+                            the ideal solution. Offering swift and dependable air transportation to hospitals worldwide,
+                            we enable you to concentrate on your medical duties. As a trustworthy and affordable flight
+                            service, we prioritize providing prompt and secure transport to hospitals.
+                        </p>
+                    </div>
+                    <div class="text-white text-center font-sans ">
+                        <h1 class="text-4xl text-left mt-12">Who Requires Our Service?</h1>
+                        <p class="text-justify mt-6 text-xl">Our international air ambulance service is an ideal choice
+                            for businesses requiring a quick and hassle-free ambulance service. Furthermore, we offer a
+                            dependable and cost-effective flight service, allowing you to concentrate on your work.</p>
+                        <p class="text-justify mt-8 text-xl">We have a dedicated team of experienced paramedics
+                            available round the clock to assist with your transportation needs. Whether you require an
+                            ambulance for an emergency medical situation or need to transfer someone to a hospital, our
+                            air ambulance service is here to ensure you reach your destination safely and promptly.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./international images/i1.jpg" alt="">
+                    <img class="mt-8" src="./international images/i2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 p-10 gap-4">
+                <div>
+                    <img src="./international images/i3.jpg" alt="">
+                    <img class="mt-8" src="./international images/i4.jpg" alt="">
+                </div>
+                <div>
+                    <div class="text-white text-center font-sans ">
+                        <h1 class="text-4xl text-left">What Kind of Ambulance Service Do We Offer?</h1>
+                        <p class="text-justify mt-8 text-xl">We offer a range of ambulance services, encompassing
+                            medical transports and response transports.</p>
+                        <p class="text-justify mt-8 text-xl">The types of transports we provide vary based on the
+                            destination hospital. For instance, our medical transports can convey patients to hospitals
+                            in India and Malaysia. On the other hand, our response transports are equipped to transport
+                            patients to hospitals in Singapore or Thailand. Our services are both reliable and
+                            affordable, enabling you to concentrate on your core expertise—assisting people!</p>
+                    </div>
+                    <div class="text-white text-center font-sans ">
+                        <h1 class="text-4xl text-left mt-12">How much does our Air Ambulance Service cost?</h1>
+                        <p class="text-justify mt-6 text-xl">Our air ambulance service costs a little more than what you
+                            would pay for a regular flight, but it’s worth it because it is reliable and provides the
+                            best possible experience. In addition, we use the latest technology and equipment to ensure
+                            that your flight is as safe as possible
+                        </p>
+                    </div>
+                    <div class="text-white text-center font-sans ">
+                        <h1 class="text-4xl text-left mt-12">How quickly can we transport you to the hospital?</h1>
+                        <p class="text-justify mt-6 text-xl">We consistently ensure the fastest possible transportation
+                            to the hospital. Our air ambulance service is outfitted with state-of-the-art technology and
+                            boasts a lengthy track record of delivering world-class services. You can be assured that
+                            your well-being will be our foremost priority, and you will receive excellent care.</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 p-10 gap-4">
+                <div>
+                    <div class="text-white text-center font-sans ">
+                        <h1 class="text-4xl text-left">What is the level of safety provided by our air ambulance service?</h1>
+                        <p class="text-justify mt-8 text-xl">Our air ambulance service stands among the safest in the
+                            industry. We employ cutting-edge equipment and pilots with full certification and insurance.
+                            Furthermore, we adhere to a stringent no-fault policy, ensuring that your sick or injured
+                            loved one will consistently receive proper care and attention.</p>
+                    </div>
+                    <div class="text-white text-center font-sans ">
+                        <h1 class="text-4xl text-left mt-12">The International Air Ambulance Service provides swift and convenient transportation from Dhaka to India.</h1>
+                        <p class="text-justify mt-6 text-xl">International Air Ambulance Service is a company providing
+                            swift and straightforward travel from Dhaka to India. They deliver an experienced,
+                            professional, and compassionate service at a competitive price, ensuring trustworthiness.
+                        </p>
+                        <p class="text-justify mt-8 text-xl">For individuals desiring travel from Dhaka to India, the
+                            International Air Ambulance Service is the solution for quick and seamless journeys. This
+                            company offers an experienced, professional, and compassionate service at a competitive
+                            price, ensuring dependability.</p>
+                    </div>
+                    <div class="text-white text-center font-sans ">
+                        <h1 class="text-4xl text-left mt-12">How are expenses calculated for an international air ambulance service?</h1>
+                        <p class="text-justify mt-6 text-xl">When determining the cost of an international air
+                            ambulance, various factors come into play. These factors encompass the patient's age, the
+                            hospital's location, and the severity of their condition. The more critical their condition,
+                            the higher the charges. Additional fees may also apply, depending on the distance covered to
+                            transport them to a hospital in another country.</p>
+                        <p class="text-justify mt-8 text-xl">Embarking on global medical care journeys can be expensive,
+                            yet a emerging healthcare trend seamlessly merges the convenience of online booking with
+                            affordable airfare. Doctors can now handle patients' flight and accommodation reservations,
+                            providing a prepaid debit card that covers all expenses during their stay. For further
+                            details, please reach out to us.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./international images/i5.jpg" alt="">
+                    <img class="mt-8" src="./international images/i6.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 p-10 gap-4">
+                <div>
+                    <img src="./international images/i7.jpg" alt="">
+                    <img class="mt-8" src="./international images/i8.jpg" alt="">
+                </div>
+                <div>
+                    <div class="text-white text-center font-sans ">
+                        <h1 class="text-4xl text-left">Reserve your international Air Ambulance through Medical Air Service.
+                        </h1>
+                        <p class="text-justify mt-8 text-xl">Exploring foreign lands can be a delightful and thrilling
+                            adventure, yet unexpected events can turn it into a stressful situation. Medical Air Service
+                            offers international air ambulance services that are both affordable and offer peace of mind
+                            to those in need. Secure your international air ambulance today with Medical Air Service.
+                        </p>
+                        <p class="text-justify mt-8 text-xl">Medical Air Service stands as a premier provider of
+                            international air ambulance services. In times of need, they boast a network of aircraft
+                            capable of safely transporting you to the hospital of your choice for optimal treatment.</p>
+                    </div>
+                    <div class="text-white text-center font-sans ">
+                        <h1 class="text-4xl text-left mt-12">What is the pricing for international air ambulance services?</h1>
+                        <p class="text-justify mt-6 text-xl">Determining the cost of an international air ambulance is
+                            challenging, as it hinges on numerous factors. Elements such as the number of medical
+                            personnel, the severity of the patient's illness, location, and more contribute to the
+                            overall expense. Generally, flying with a private jet tends to be more cost-effective than
+                            opting for an international commercial airline.
+                        </p>
+                        <p class="text-justify mt-8 text-xl">Private jets typically come at a lower cost compared to
+                            international commercial airlines. Opting for a private jet can be an excellent way to
+                            travel in style while retaining flexibility in your trip's timing. If you're in search of a
+                            private jet, consider reaching out to an airline broker such as [Contact Information]. <a
+                                href="index.html">www.airambulanceservicebd.com.</a></p>
+                    </div>
+                    <div class="text-white text-center font-sans ">
+                        <h1 class="text-4xl text-left mt-12">At what time do the air ambulances cease operations?</h1>
+                        <p class="text-justify mt-6 text-xl">Air ambulances remain on standby for the 10 minutes
+                            preceding and following their scheduled departures to ensure efficient take-off.
+                            Occasionally, they may extend beyond the 10-minute window and stay airborne over a larger
+                            area.</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class=" px-10 text-xl mb-6">
+                <h1 class="text-white text-justify text-left text-4xl">Conclusion:</h1>
+                <p class="text-white text-justify text-left mt-4">We provide unparalleled service for your urgent
+                    medical requirements. Should you seek additional information about our international air ambulance
+                    service or other services, feel free to reach out to us without hesitation.</p>
+            </div>
+
+        </section>
+        <section class="mt-4 container mx-auto ">
+            <div class="text-4xl font-bold text-white text-center mt-16">
+                <h1>Our All International Flights Gallery</h1>
+            </div>
+            <div class="mt-8 flex justify-center items-center sm:p-0">
+                <div
+                    class=" grid grid-cols-1 gap-3 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 [&>img:not(:first-child)]:mt-3 lg:[&>img:not(:first-child)]:mt-8">
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./international images/g1.jpg"
+                                alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./international images/g2.jpg"
+                                alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./international images/g3.jpg"
+                                alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./international images/g4.jpg"
+                                alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./international images/g5.jpg"
+                                alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./international images/g6.jpg"
+                                alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./international images/g7.jpg"
+                                alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./international images/g8.jpg"
+                                alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./international images/g9.jpg"
+                                alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./international images/g10.jpg"
+                                alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./international images/g11.jpg"
+                                alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./international images/g12.jpg"
+                                alt=""></a>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Main modal -->
+                <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full mt-12 md:inset-0 h-full ">
+                    <div style="width: 70%;" style="height: 90%;" class="relative p-4  max-h-full mt-16">
+                        <!-- Modal content -->
+                        <div class="relative bg-none rounded-lg shadow ">
+                            <!-- Modal header -->
+                            <div class="flex items-center justify-between p-4 md:p-5  ">
+
+                                <button type="button"
+                                    class="text-gray-400 bg-none   rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center  "
+                                    data-modal-hide="static-modal">
+                                    <svg class="w-3 h-3 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 14 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                    </svg>
+                                    <span class="sr-only">Close modal</span>
+                                </button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="p-4 md:p-5 space-y-4">
+                                <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                    <!-- Carousel wrapper -->
+                                    <div
+                                        class="relative h-56 overflow-hidden rounded-lg md:h-[550px] w-full lg:w-full h-[550px] lg:h-[750px]">
+                                        <!-- Item 1 -->
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./international images/g1.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            Air Ambulance private jet</p>
+                                                        <p class="w-full text-center text-[#fff]">Air Ambulance private
+                                                            jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./international images/g2.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff] ">
+                                                            Air Ambulance Interior</p>
+                                                        <p class="w-full text-center text-[#fff]"> Air Ambulance
+                                                            Interior
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./international images/g3.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance beech craft 200</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance beech
+                                                            craft 200
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./international images/g4.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff] ">
+                                                            international Air Ambulance flight service</p>
+                                                        <p class="w-full text-center text-[#fff]"> international Air
+                                                            Ambulance flight service
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./international images/g5.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            international Air Ambulance flight service</p>
+                                                        <p class="w-full text-center text-[#fff]"> international Air
+                                                            Ambulance flight service
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./international images/g6.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            international Air Ambulance flight service</p>
+                                                        <p class="w-full text-center text-[#fff]"> international Air
+                                                            Ambulance flight service
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./international images/g7.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            international Air Ambulance flight service</p>
+                                                        <p class="w-full text-center text-[#fff]"> international Air
+                                                            Ambulance flight service
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./international images/g8.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            international Air Ambulance flight service</p>
+                                                        <p class="w-full text-center text-[#fff]"> international Air
+                                                            Ambulance flight service
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./international images/g9.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance beech craft 200</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance beech
+                                                            craft 200
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./international images/g10.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance Interior</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance
+                                                            Interior
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./international images/g11.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            international Air Ambulance flight service</p>
+                                                        <p class="w-full text-center text-[#fff]"> international Air
+                                                            Ambulance flight service
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./international images/g12.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance Interior</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance
+                                                            Interior
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slider indicators -->
+                                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50  hover:bg-white"
+                                            aria-current="true" aria-label="Slide 1"
+                                            data-carousel-slide-to="0"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 2"
+                                            data-carousel-slide-to="1"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50  hover:bg-white"
+                                            aria-current="false" aria-label="Slide 3"
+                                            data-carousel-slide-to="2"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50  hover:bg-white"
+                                            aria-current="false" aria-label="Slide 4"
+                                            data-carousel-slide-to="3"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 5"
+                                            data-carousel-slide-to="4"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 6"
+                                            data-carousel-slide-to="5"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 7"
+                                            data-carousel-slide-to="6"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 8"
+                                            data-carousel-slide-to="7"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 9"
+                                            data-carousel-slide-to="8"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 10"
+                                            data-carousel-slide-to="9"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 11"
+                                            data-carousel-slide-to="10"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 12"
+                                            data-carousel-slide-to="11"></button>
+                                    </div>
+                                    <!-- Slider controls -->
+                                    <button type="button"
+                                        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                        data-carousel-prev>
+                                        <span
+                                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                                            <svg class="w-4 h-4 text-white" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+                                            </svg>
+                                            <span class="sr-only">Previous</span>
+                                        </span>
+                                    </button>
+                                    <button type="button"
+                                        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                        data-carousel-next>
+                                        <span
+                                            class="flex items-center justify-center  w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                                            <svg class="w-4 h-4 text-white" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                                            </svg>
+                                            <span class="sr-only">Next</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Modal footer -->
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 mt-8">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4  md:gap-6">
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold">Our Address</h1>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="home-outline"></ion-icon>
+                    <p>Flat 4D, House 11, Road 18, <br> Uttara (Sector-4), Dhaka, 1230</p>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="mail"></ion-icon>
+                    <a href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-4">Services</h1>
+                <div class="mt-8 ">
+                    <ul class="list-disc">
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Singapore</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Thailand</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to India</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Malayasia</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Maldivs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-8">Links</h1>
+                <div class="text-white ">
+                    <a href="">
+                        <p class="mt-4">Terms and Conditions</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Privacy Policy</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Terms of Use</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Disclaimer</p>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-12">Social Links</h1>
+                <div class="flex gap-2 mt-8">
+                    <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon  class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                    <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                    <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container mx-auto p-2">
+        <p class="text-center text-white ">©2024 Air Ambulance Bangladesh LtdService.</p>
+    </div>
+    <script>
+         function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.remove('hidden')) : (e.name = "menu",list.classList.remove('top-[80px]'), list.classList.add('hidden')) 
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html data-theme="dark ,light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Ambulace Bangladesh</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.jfif">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#header-content").load("./header.html");
+            $("#footer").load("./footer.html");
+        });
+    </script>
+    <style type="text/tailwindcss">
+
+/* .animated-color {
+  width: 100px;
+  height: 100px;
+  color: rgb(255, 255, 255);
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {color: rgb(255, 255, 255);}
+  to {color: rgb(14, 194, 254);}
+} */
+
+
+.animated-color {
+  width: 100px;
+  height: 100px;
+  color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  25%   {color: rgb(49, 247, 72);}
+  25%  {color: yellow;}
+  50%  {color: rgb(49, 179, 249);}
+  100% {color: rgb(255, 255, 255);}
+}
+        .submenu {
+            display: none;
+        }
+
+        :root {
+            --color-primary: #050505;
+            --color-primary-light: #d96cdb;
+            --secondary-color: #0a5c83;
+        }
+
+        /* Show the submenu when hovering over the parent element */
+        .group:hover .submenu {
+            display: block;
+        }
+
+        @keyframes carousel {
+            100% {
+                transform: translateX(-250);
+            }
+        }
+        @layer utilities{
+            .nav::after{
+                @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute
+            }
+            .nav:hover::after{
+                @apply w-[100%]
+            }
+        }
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+
+        .scroll-text {
+            white-space: nowrap;
+            animation: scroll 10s linear infinite;
+        }
+
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            60% {
+                transform: translateX(30%);
+            }
+        }
+
+        .dropdown_item:hover .dropdown_arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body class="bg-black">
+    <div id="header-content"></div>
+    <div w3-include-html="./header.html"></div>
+    <header class=" bg-black p-4 mx-32 hidden lg:block">
+        <div class="container mx-auto text-white flex justify-between">
+             <div>
+                Air Ambulance Bangladesh Ltd
+            </div>
+            <div class="flex gap-3">
+                <div class="">
+                    <ion-icon class="text-white text-center text-2xl" name="mail-outline"></ion-icon>
+                </div>
+                <div>
+                    <a class="text-center" href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+            </div>
+            <div class="gap-2 flex">
+                <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="rounded sticky top-0 z-40 xl:z-50  bg-[var(--color-primary)] border-y-2 border-y-white-100">
+            <div class="flex  gap-4" style="justify-content: center; align-items: center;">
+
+
+                <img class="w-36 h-16 p-2  md:p-0 ml-[10px]" src="./images/logo.jfif" alt="">
+
+           
+
+                <!--  <div style="width: 550%; display: flex; justify-content: center;">
+                <button  class="relative bg-transparent mr-4 pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded"> 
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                    <div class="hidden md:block w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping"></div>
+                    <div class="hidden md:block w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping"></div>
+                </button>
+                </div> -->
+                <div style="width: 550%; display: flex; justify-content: center;">
+                    <button 
+                        class="relative bg-transparent  pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
+                        <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping">
+                        </div>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping">
+                        </div>
+                    </button>
+                </div>
+
+                <div
+                    class="container mx-auto flex justify-end   bg-[var(--color-primary)] rounded-md   text-black xl:text-white ">
+                    <span
+                        class="text-3xl cursor-pointer p-[5px] m-[5px] hover:border-dotted bg-zinc-700 text-white xl:hidden">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+
+                    </span>
+                    <ul
+                        class="uppercase nav1 xl:flex xl:items-center mx-8 p-4 z-[-1]
+                         xl:z-auto xl:static absolute bg-white xl:bg-[var(--color-primary)] w-full 
+                          letf-0 xl:w-auto xl:py-0 my-4 pl-8 xl:pl-0   xl:opacity-100 hidden  xl:text-middle trasition-all easein doration-500 m-[5px] ">
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="index.html">
+                                <p class="whitespace-nowrap">home</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group ">
+                            <a
+                                class="dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 ">
+                                <div class="flex gap-1 ">
+                                    <p class="whitespace-nowrap cursor-pointer">Service</p>
+                                </div> <ion-icon class="dropdown_arrow " name="chevron-up-outline"></ion-icon>
+                            </a>
+
+                            <div style="z-index: 99;"
+                                class="xl:absolute xl:bg-black text-black xl:text-white text-lg  w-64 drop-shadow-md ml-4 xl:ml-auto">
+                                <ul class="space-y-4 xl:w-56 group-hover:block submenu  p-2 ">
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdhaka.html
+                                        ">air ambulance in dhaka</a>
+
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airsingapore.html">air ambulance in Singapore</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airthailand.html">air ambulance in Thailand</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airmalayasia.html">air ambulance in Malayasia</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airindia.html">air ambulance in india</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdomestic.html">air helicopter Domestic</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="aircraft.html">
+                                <p class="whitespace-nowrap">AIRCRAFTS</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="domestic.html">
+                                <p class="whitespace-nowrap">Domestic </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="international.html">
+                                <p class="whitespace-nowrap">International </p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="about.html">
+                                <p class="whitespace-nowrap">about us </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="client.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">client
+                                    <p></p>
+                                </div>
+                            </a>
+
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="blog.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">blog </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group "><a
+                                class="  dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 lg:nav"
+                                href="contact.html">
+                                <p class="whitespace-nowrap">contact us</p>
+                            </a>
+
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="container mx-auto  ">
+            <div class="flex justify-center items-center mt-24" style="width: 100%;">
+                <img src="./read7/7.jpg" alt="">
+            </div>
+            <div class="justify-center mt-12 xl:px-32 2xl:px-64">
+                <h1 class="text-white text-left text-black text-3xl font-medium ">Transport via air ambulance from Bangladesh to Bangkok, Thailand
+                </h1>
+                <p class=" mt-8 text-white text-xl "><a class="hover:text-yellow-500" href="">Leave a
+                        Comment</a> / <a class="hover:text-yellow-500" href="un.html">Uncategorized </a> / By <a
+                        class="hover:text-yellow-500" href="rubel.html">Rubel</a>
+                </p>
+                <h1 class="text-white text-center text-black text-6xl font-medium mt-12">Air ambulance service between Bangkok, Thailand and Bangladesh
+
+                </h1>
+                <p class="text-white text-xl mt-12">Bangladesh Air Ambulance Services is a leading Air ambulance service
+                    provider based in Bangladesh. We provide Air ambulance services for patients from Bangladesh to
+                    Bangkok Thailand and vice versa. <br><br>
+
+                    We offer Air ambulance service that provides the best possible care to your loved ones, as we know
+                    how important it can be when you’re far away from them.
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">A flight nurse traveling from Dhaka to Bangkok in an air ambulance
+
+                </h1>
+                <p class="text-white text-xl mt-12">The flight nurse was born and raised in Dhaka, Bangladesh. She
+                    started working with the air ambulance service as soon after high school when it became clear that
+                    this is what she wanted to do for her future career path. <br><br>
+
+                    After completing an education program at length so there would be no gaps or interruptions during
+                    employment opportunities came up; The 24-year old has been flying ever since! She provides emergency
+                    medical care on board and offers preflight assessments before such trips – all while wearing a
+                    Hazard 4 outfit (which includes everything imaginable).
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">Air Ambulance Dhaka to Bangkok: Reservation, Price, Helicopter, Insurance Protection.
+
+                </h1>
+                <p class="text-white text-xl mt-12">Air Ambulance Thailand is a Thailand-based company that provides air
+                    ambulance services for people who need to be transferred between two countries. They are one of the
+                    most reliable companies in Thailand, with years of experience and thousands of satisfied customers.
+                    <br><br>
+
+                    This blog post will give you all the information you need about Thailand Air Ambulance Service’s
+                    prices, booking process, helicopter models they offer, medical staff qualifications, and more!
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">Air ambulance service from Dhaka to several hospitals in Bangkok
+
+                </h1>
+                <p class="text-white text-xl mt-12">Air Ambulance from Dhaka to Hospitals in Different Parts of Bangkok
+                    <br><br>
+
+                    The Air ambulance service is used for medical emergencies and can go anywhere, even if it’s not on
+                    their route. They work with many international hospitals approved by Thai authorities and other
+                    countries like China or India who also provide helicopter transportation services abroad. <br><br>
+
+                    One time I had an accident while driving back home after soccer practice; luckily, there was one
+                    close enough where we took off without delay! The nurse at this place got us stabilized quickly
+                    before rushing away so they could get better care plans set up. <br><br>
+
+                    Air Ambulance Dhaka To Singapore/Bangkok/Thailand – Aviation consultant in Dhaka -Air Ambulance
+                    Dhaka To Singapore/Bangkok and Thailand, also known as AADT – Airline Agencies of Bangladesh is a
+                    consulting agency in the capital city. As well they specialize with air ambulance service that
+                    provide transportation for critically ill or injured patients to hospitals abroad by helicopter.”
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">Air ambulance service between Dhaka and Bangkok Medical Market BD, Thailand
+
+                </h1>
+                <p class="text-white text-xl mt-12">Ever felt the need to get medical assistance in a hurry? Then, an
+                    air Ambulance Service from Dhaka to Thailand, Bangkok Medical Market BD, can help! <br><br>
+
+                    A significant challenge that many people face with traveling abroad is getting access to local
+                    healthcare. When you’re on your way home after vacationing or if an emergency strikes while
+                    exploring another country – no matter where it happens- there are few options available at all times
+                    other than calling 911. which may not always work out as expected due to either poor reception
+                    quality (if outside)or lack of knowledge about what language needs translating into when speaking
+                    English but being somewhere totally unfamiliar like India
+                </p>
+                <ul class="list-disc mt-8 ml-16 mb-4 text-white">
+                    <li>Air Ambulance from Bangladesh -We’re prepared to help you in any emergency. Whether it’s a heart
+                        attack or stroke, we have the best teams from all over Bangladesh here at our service center!
+                    </li>
+                    <li class="mt-4">This is How Much Air Medical Transport Costs – Medical air transportation companies
+                        have been helping save countless lives, often under dramatic circumstances, and have undoubtedly
+                        brought quicker emergency medical care to certain rural areas of the world </li>
+                    <li class="mt-4">Bangkok Air Ambulance India Charges Cost Price Charter Company</li>
+                </ul>
+                <p class="text-white text-xl mt-8">
+                    The Bangkok Air Ambulance India charges cost prices for their service. However, the company offers a
+                    variety of charter-air ambulance options, which can be tailored to your needs with different rates
+                    available per minute and kilometer flown and whether you want the flight crew on board or not!
+                </p>
+                <ul class="list-disc mt-8 ml-16 mb-4 text-white">
+                    <li>nfant and Pediatric Critical Care Transportation in Bangkok, Thailand -Our team of doctors and
+                        nurses specializes in treating children, as well as medical professionals. They are specially
+                        trained to assist in an air evacuation by providing on-the-spot care for your loved one’s needs.
+                        At the same time, they’re aboard the plane or helicopter evacuating them away from danger.
+                    </li>
+                    <li class="mt-4">This is How Much Air Medical Transport Costs – Medical air transportation companies
+                        have been helping save countless lives, often under dramatic circumstances, and have undoubtedly
+                        brought quicker emergency medical care to certain rural areas of the world </li>
+                    <li class="mt-4">Bumrungrad International Hospital – JCI Accredited International Hospital Named Top
+                        10 World Medical Destination (Newsweek), Best Quality Service and Top 4 Medical Tourism Pioneer
+                        (WSJ) – Thailand </li>
+                </ul>
+                <p class="text-white text-xl mt-8">
+                    Air Ambulance Service in Dhaka, Bangladesh – 0123456789 – ALMAS AMBULANCE – Your Life Matters –
+                    Ambulance Service in Dhaka, Bangladesh Dhaka is known as one of the world’s most populated cities
+                    but it has built an infrastructure that supports the system. Bangladesh’s government has done a
+                    great job in strengthening the healthcare system of Dhaka to provide quality medical care to a large
+                    population.!
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">Top Topics
+                </h1>
+                <p class="text-white text-xl mt-12">Topics sorted by frequency across top search results:
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">What is the speed at which an air ambulance can fly?
+
+                </h1>
+                <p class="text-white text-xl mt-12">“How quickly can you get from point A to B!” It’s a question we all
+                    want to be answered with an answer that doesn’t involve traffic and usually not too many hours on
+                    public transport. Most people would say they need their cars for this purpose, but what if there was
+                    another option: the Emergency Medical Services (EMS). EMS does take some time getting used to – it
+                    is different from driving your car because instead of following one route like normal roads or
+                    highways, every exit has been planned ahead, As well as incoming directions based on these exits;
+                    however, now imagine those same roads without any markings at all…the possibilities become endless!
+                    Air Ambulance Pilots operate similarly by flying over towns & cities
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">Patient
+                </h1>
+                <p class="text-white text-xl mt-12">Patients are people who have been diagnosed with something and need
+                    treatment. A patient is someone who follows doctors’ orders, tries to do what they say as best one
+                    can, and expects a reasonable amount of compassion in return.
+                </p>
+
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">Time
+                </h1>
+                <p class="text-white text-xl mt-12">The time is now to call the Air Ambulance Service. <br><br>
+
+                    “I don’t know what I would do without them!” says _____, “the last thing that anyone needs when
+                    faced with an emergency is their own mortal limits. If there’s a medical issue or injury, you need
+                    help fast! That’s where air ambulance services come into play.” With experienced pilots onboard plus
+                    state-of-the-art equipment at your disposal 24/7 – it can make all the difference in situations like
+                    this one may find themselves facing. Especially if they’re not familiarized with how best to utilize
+                    such resources against just about any potential hazard, be it natural disasters outside artificial
+                    ones too like fires and earthquakes, which have become more common throughout recent years
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">International Hospital
+
+                </h1>
+                <p class="text-white text-xl mt-12">The best hospitals are those that offer you the opportunity for a
+                    better life. They can help people who live in other countries, like me!
+
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">Air ambulance service flight
+                </h1>
+                <p class="text-white text-xl mt-12">From the moment you call for help to when your loved one is
+                    transported in style and comfort. You can count on Air Ambulance Services for an efficient response
+                    time with experienced professionals who are equipped to fly and provide care at landing sites around
+                    town or countrywide!
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">Helicopter
+                </h1>
+                <p class="text-white text-xl mt-12">Air ambulance service helicopters are becoming more popular among
+                    hospitals and medical facilities in areas where ambulances or ground transport may not be available.
+                    Air ambulance services provide the fastest way to get patients to a hospital, making all the
+                    difference during an emergency. Air ambulances also allow for doctors and nurses on board who can
+                    attend to patients right away without waiting for an ambulance to arrive. Air ambulance service
+                    helicopters are now trending with many people looking into this option and medical facilities that
+                    need it!
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">Verification of the booking for air ambulance services
+
+                </h1>
+                <p class="text-white text-xl mt-12">The Air Ambulance Service will pick you up from Suvarnabhumi
+                    International Airport in Bangkok, Thailand, and fly you to Dhaka, Bangladesh. The Air Ambulance
+                    Service is a medically equipped helicopter that can transport patients who need critical care. We
+                    recommend that all passengers have travel insurance. For more information or to book your flight,
+                    please call our Air Ambulance Service team at +(0123456789). Thank you for choosing the Air
+                    Ambulance Service.
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">Air ambulance service available at Dhaka Airport
+
+                </h1>
+                <p class="text-white text-xl mt-12">Air ambulance service Dhaka Airport is an organization that provides
+                    urgent medical care and transportation services to patients in need. <br><br>
+
+                    Licensed air ambulances are equipped with advanced life-saving equipment like ventilators,
+                    defibrillators (cardio), and intensive blood monitoring units. This enables us to fly our patients
+                    directly to hospitals of their choice or nearby specialized facilities 24 hours around the clock
+                    without any delay in the waiting time on ground level treatment such as transfusion, etc. We also
+                    have rescue medications available. Take the required dose orally if needed during flight to be
+                    readily given after landing safely there. While talking over the phone, the doctor discussed the
+                    further course.
+                </p>
+                <h1 class="text-white text-left text-black text-3xl font-medium mt-12">Dhaka air ambulance service
+
+                </h1>
+                <p class="text-white text-xl mt-12">Air Ambulance Services is a unique service that offers emergency
+                    medical care in the event of sudden illness or accident. Air assault and search-and-rescue missions
+                    are conducted 24/7, 365 days per year, for all communities across Bangladesh to ensure quick
+                    response times. Safety precautions with direct access through limited resources like helicopters
+                    which can get you there quickly without having patients wait on the ground while transportation
+                    arrives. <br><br>
+
+                    Airlift helps save lives by providing fast, efficient relief during disaster situations where roads
+                    may be cut off due to heavy rains & floods. <br><br>
+
+                    Conclusion paragraph: Thank you for reading this blog post. We hope that the information we shared
+                    has been helpful to you and your company. If there is anything else we can do, please let us know!
+                </p>
+
+
+
+
+            </div>
+
+            <div class="justify-center mt-36 xl:px-32 2xl:px-64 text-white">
+                <div class="">
+                    
+                    <a class="flex gap-2 justify-end" href="read8.html">
+
+                        <p class="text-xl mb-4">Next Post</p>
+                        <ion-icon class="text-xl mt-1" name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
+                <!-- <p class="text-2xl font-bold mt-28">Leave a Comment</p>
+                <p class="text-xl text-gray-900 mt-4">Your email address will not be published. Required fields are
+                    marked *</p>
+                <div class="mt-4">
+
+                    <input type="text" id="message" class="  hover:border-dotted w-full h-72  "
+                        placeholder="Type here....">
+                </div>
+                <div class="grid grid-cols-3 gap-12 mt-4">
+                    <div>
+
+                        <input type="text" id="name"
+                            class="border hover:border-dotted w-full text-base px-2 py-4 focus:outline-none focus:ring-0 focus:border-gray-600 "
+                            placeholder="Name*">
+                    </div>
+                    <div mt-4>
+
+                        <input type="text" id="email"
+                            class="border hover:border-dotted w-full text-base px-2 py-4 focus:outline-none focus:ring-0 focus:border-gray-600 "
+                            placeholder="Email*">
+                    </div>
+                    <div mt-4>
+
+                        <input type="text" id="websites"
+                            class="border hover:border-dotted w-full text-base px-2 py-4 focus:outline-none focus:ring-0 focus:border-gray-600 "
+                            placeholder="Websites">
+                    </div>
+                </div>
+                <div class="flex gap-2 mt-8">
+
+                    <input type="checkbox" class="checkbox checkbox-error mt-2" />
+                    <p class="text-gray-700 text-xl">Save my name, email, and website in this browser for the next time
+                        I comment.</p>
+                </div>
+                <button class="bg-white text-center text-black p-4 mt-8">POST COMMENT >></button> -->
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-gray-800 mt-8">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4  md:gap-6">
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold">Our Address</h1>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="home-outline"></ion-icon>
+                    <p>Flat 4D, House 11, Road 18, <br> Uttara (Sector-4), Dhaka, 1230</p>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="mail"></ion-icon>
+                    <a href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-4">Services</h1>
+                <div class="mt-8 ">
+                    <ul class="list-disc">
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Singapore</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Thailand</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to India</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Malayasia</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Maldivs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-8">Links</h1>
+                <div class="text-white ">
+                    <a href="">
+                        <p class="mt-4">Terms and Conditions</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Privacy Policy</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Terms of Use</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Disclaimer</p>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-12">Social Links</h1>
+                <div class="flex gap-2 mt-8">
+                    <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon  class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                    <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                    <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="container mx-auto p-2">
+        <p class="text-center text-white ">©2024 Air Ambulance Bangladesh LtdService.</p>
+    </div>
+    <script>
+         function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.remove('hidden')) : (e.name = "menu",list.classList.remove('top-[80px]'), list.classList.add('hidden')) 
+        }
+
+    </script>
+</body>
+
+</html>

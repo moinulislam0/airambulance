@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html data-theme="dark ,light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Ambulace Bangladesh</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.jfif">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#header-content").load("./header.html");
+            $("#footer").load("./footer.html");
+        });
+    </script>
+    <style type="text/tailwindcss">
+
+/* .animated-color {
+  width: 100px;
+  height: 100px;
+  color: rgb(255, 255, 255);
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {color: rgb(255, 255, 255);}
+  to {color: rgb(14, 194, 254);}
+} */
+
+
+.animated-color {
+  width: 100px;
+  height: 100px;
+  color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  25%   {color: rgb(49, 247, 72);}
+  25%  {color: yellow;}
+  50%  {color: rgb(49, 179, 249);}
+  100% {color: rgb(255, 255, 255);}
+}
+        .submenu {
+            display: none;
+        }
+
+        :root {
+            --color-primary: #050505;
+            --color-primary-light: #d96cdb;
+            --secondary-color: #0a5c83;
+        }
+
+        /* Show the submenu when hovering over the parent element */
+        .group:hover .submenu {
+            display: block;
+        }
+
+        @keyframes carousel {
+            100% {
+                transform: translateX(-250);
+            }
+        }
+        @layer utilities{
+            .nav::after{
+                @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute
+            }
+            .nav:hover::after{
+                @apply w-[100%]
+            }
+        }
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+
+        .scroll-text {
+            white-space: nowrap;
+            animation: scroll 10s linear infinite;
+        }
+
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            60% {
+                transform: translateX(30%);
+            }
+        }
+
+        .dropdown_item:hover .dropdown_arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body class="bg-black">
+    <div id="header-content"></div>
+    <div w3-include-html="./header.html"></div>
+    <header class=" bg-black p-4 mx-32 hidden lg:block">
+        <div class="container mx-auto text-white flex justify-between">
+             <div>
+                Air Ambulance Bangladesh Ltd
+            </div>
+            <div class="flex gap-3">
+                <div class="">
+                    <ion-icon class="text-white text-center text-2xl" name="mail-outline"></ion-icon>
+                </div>
+                <div>
+                    <a class="text-center" href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+
+                    
+                </div>
+            </div>
+            <div class="gap-2 flex">
+                <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="rounded sticky top-0 z-40 xl:z-50  bg-[var(--color-primary)] border-y-2 border-y-white-100">
+            <div class="flex  gap-4" style="justify-content: center; align-items: center;">
+
+
+                <img class="w-36 h-16 p-2  md:p-0 ml-[10px]" src="./images/logo.jfif" alt="">
+
+           
+
+                <!--  <div style="width: 550%; display: flex; justify-content: center;">
+                <button  class="relative bg-transparent mr-4 pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded"> 
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                    <div class="hidden md:block w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping"></div>
+                    <div class="hidden md:block w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping"></div>
+                </button>
+                </div> -->
+                <div style="width: 550%; display: flex; justify-content: center;">
+                    <button 
+                        class="relative bg-transparent  pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
+                        <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping">
+                        </div>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping">
+                        </div>
+                    </button>
+                </div>
+
+                <div
+                    class="container mx-auto flex justify-end   bg-[var(--color-primary)] rounded-md   text-black xl:text-white ">
+                    <span
+                        class="text-3xl cursor-pointer p-[5px] m-[5px] hover:border-dotted bg-zinc-700 text-white xl:hidden">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+
+                    </span>
+                    <ul
+                        class="uppercase nav1 xl:flex xl:items-center mx-8 p-4 z-[-1]
+                         xl:z-auto xl:static absolute bg-white xl:bg-[var(--color-primary)] w-full 
+                          letf-0 xl:w-auto xl:py-0 my-4 pl-8 xl:pl-0   xl:opacity-100 hidden  xl:text-middle trasition-all easein doration-500 m-[5px] ">
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="index.html">
+                                <p class="whitespace-nowrap">home</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group ">
+                            <a
+                                class="dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 ">
+                                <div class="flex gap-1 ">
+                                    <p class="whitespace-nowrap cursor-pointer">Service</p>
+                                </div> <ion-icon class="dropdown_arrow " name="chevron-up-outline"></ion-icon>
+                            </a>
+
+                            <div style="z-index: 99;"
+                                class="xl:absolute xl:bg-black text-black xl:text-white text-lg  w-64 drop-shadow-md ml-4 xl:ml-auto">
+                                <ul class="space-y-4 xl:w-56 group-hover:block submenu  p-2 ">
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdhaka.html
+                                        ">air ambulance in dhaka</a>
+
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airsingapore.html">air ambulance in Singapore</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airthailand.html">air ambulance in Thailand</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airmalayasia.html">air ambulance in Malayasia</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airindia.html">air ambulance in india</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdomestic.html">air helicopter Domestic</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="aircraft.html">
+                                <p class="whitespace-nowrap">AIRCRAFTS</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="domestic.html">
+                                <p class="whitespace-nowrap">Domestic </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="international.html">
+                                <p class="whitespace-nowrap">International </p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="about.html">
+                                <p class="whitespace-nowrap">about us </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="client.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">client
+                                    <p></p>
+                                </div>
+                            </a>
+
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="blog.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">blog </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group "><a
+                                class="  dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 lg:nav"
+                                href="contact.html">
+                                <p class="whitespace-nowrap">contact us</p>
+                            </a>
+
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </section>
+        <section>
+            <div class="w-full">
+                <div class="relative  h-24 rounded-lg md:h-28 w-full lg:w-full lg:h-[150px] xl:h-[180px] 2xl:h-[200px]">
+                    <img class="h-full w-full" src="./images/img1.jpg" alt="">
+
+                    <div class="absolute inset-0 bg-black opacity-80"></div>
+                    <div class="absolute top-0 text-white text-center  lg:mt-12 " style="width: 100%;">
+                        <p class="mt-4 text-3xl lg:text-6xl font-bold uppercase">Air Ambulance in Singapore</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="mt-4 container mx-auto ">
+            <div class="grid grid-cols-1 lg:grid-cols-2 p-10 gap-4">
+                <div class="text-white text-center font-sans ">
+
+                    <p class="text-left mt-4 text-xl">When journeying from Dhaka Airport to Singapore, several factors
+                        require consideration. Foremost among these is ensuring the adequacy of your travel documents. A
+                        valid passport and either an onward or return ticket are essential. If you intend to bring items
+                        that could be restricted in your destination country, such as food, it is advisable to consult
+                        with customs before proceeding through security.</p>
+                    <h1 class="text-left text-white font-bold text-2xl mt-8">How long does a flight from Dhaka to
+                        Singapore take?</h1>
+                    <p class="text-left mt-4 text-xl">For a speedy global journey from Dhaka Airport to Singapore, opt
+                        for a direct nonstop flight. Covering a distance of over 1800 miles in just 4 hours and 10
+                        minutes, this hassle-free option will swiftly transport you far from home.</p>
+                    <img class="mt-4" src="./airsingapore images/s2.jpg" alt="">
+                </div>
+                <div class="text-white  font-sans ">
+                    <img class="mt-4" src="./airsingapore images/s1.jpg" alt="">
+                    <h1 class="text-3xl text-left mt-4">How many flights operate between Dhaka and Singapore?</h1>
+                    <p class="text-justify mt-4 text-xl">Given the extensive flight schedule to and from Dhaka, there
+                        are ample opportunities for travelers seeking time in Singapore. Flights operate daily, and on
+                        each weeknight, two direct flights depart, making the journey to this destination easily
+                        accessible.</p>
+                    <p class="text-justify mt-4 text-xl">A brief overview shows that 15 different airlines operate from
+                        this airport every week, and at times even more. This ensures you'll always have a plethora of
+                        options available if your travel plans involve utilizing routes through the Asia-Pacific country
+                        known as Bangladesh.</p>
+                    <h1 class="text-justify mt-4 font-bold text-2xl">Is a passport required for air travel between Dhaka and Singapore?</h1>
+                    <p class="text-justify mt-4 text-xl">Exploring the vibrant attractions of Singapore is an exciting
+                        prospect, but it's essential to have a passport if your itinerary involves traveling to this
+                        destination.</p>
+
+                </div>
+                <div class="text-white  font-sans ">
+
+                    <h1 class="text-3xl text-left mt-4">What is the most economical day of the week to travel from Dhaka to Singapore?</h1>
+                    <p class="text-justify mt-4 text-xl">On average, flights between Dhaka and Singapore are more
+                        affordable on Mondays compared to other days of the week. Sundays typically have the highest
+                        flight costs in this region, and Thursdays are another popular choice, being close to the
+                        weekend. Additionally, keep in mind that fares tend to drop even further in November!</p>
+                    <h1 class="text-4xl text-left mt-4">Which airports will be utilized for my flight from Dhaka to Singapore?</h1>
+                    <p class="text-justify mt-4 text-xl">Both Dhaka and Singapore are serviced by a primary airport.
+                        Departure from Dhaka occurs at Zia International Airport, and upon reaching Singapore, you'll
+                        find the terminal of Changi International Airport conveniently located near the train station
+                        (Changi).</p>
+
+
+                    <img class="mt-16" src="./airsingapore images/s4.jpg" alt="">
+
+                </div>
+                <div class="text-white  font-sans ">
+                    <img class="mt-[-180px]" src="./airsingapore images/s3.jpg" alt="">
+                    <h1 class="text-3xl text-left mt-24">How does KAYAK identify such low prices for flights from Dhaka to Singapore?</h1>
+                    <p class="text-justify mt-4 text-xl">KAYAK functions as a travel search engine, processing over 2
+                        billion flights annually. Through our platform, we can present the most competitive prices to
+                        our users for flights from Dhaka to Singapore.
+                    </p>
+                    <p class="text-justify mt-4 text-xl">The provided text indicates that Kayak extensively searches
+                        across various websites to gather options and pricing details for airfare. This includes not
+                        only commercial carriers but also private individuals operating unconventional aircraft like
+                        helicopters or drones, which can offer more cost-effective alternatives. The resulting
+                        information emphasizes Kayak's methodology, involving the analysis of substantial query volumes
+                        each year, now constituting more than half of the total global passenger traffic.</p>
+
+                </div>
+                <div class="text-white  font-sans ">
+
+                    <h1 class="text-3xl text-left mt-4">How can KAYAK's flight price forecast tool help me choose the right time to purchase my flight ticket from Dhaka to Singapore?</h1>
+                    <p class="text-justify mt-4 text-xl">Utilizing historical data, KAYAK's flight price forecast tool
+                        assesses whether the expenses for a journey from Dhaka, Bangladesh, are anticipated to increase
+                        or decrease within the next 7 days. This feature enables you to gauge whether it's advisable to
+                        wait before finalizing your reservation.</p>
+
+                    <h1 class="text-3xl text-left mt-4">Flight Itinerary from Dhaka to Singapore</h1>
+                    <p class="text-justify mt-4 text-xl">Opting for air travel is the most efficient means of
+                        transitioning from Dhaka, Bangladesh (known for its economic challenges), to Singapore. You have
+                        the flexibility to choose from various airlines, including options for both direct and indirect
+                        flights. While indirect flights may be more budget-friendly, they might take longer than a
+                        conventional route.</p>
+                    <h1 class="text-3xl text-left mt-4">Organize Your Journey from Dhaka (DAC) to Singapore (SIN)</h1>
+                    <p class="text-justify mt-4 text-xl">Experience a last-minute escape or a well-deserved getaway with
+                        airambulanceservicebd from Dhaka to Singapore. Take advantage of features such as exploring
+                        popular airlines and identifying the best season before your arrival. Opportunities like these
+                        may not present themselves often, and flights are consistently in high demand. Seize the moment
+                        by booking our exceptional deals today to ensure you don't miss out on the excitement and
+                        adventure that awaits!</p>
+
+                    <img class="mt-20" src="./airsingapore images/s6.jpg" alt="">
+
+                </div>
+                <div class="text-white  font-sans ">
+                    <img class="mt-8 lg:mt-" src="./airsingapore images/s5.jpg" alt="">
+                    <h1 class="text-3xl text-left mt-4">An Unforgettable Journey (DAC—SIN)</h1>
+                    <p class="text-justify mt-4 text-xl">Require assistance in navigating Singapore? Utilize Trip.com
+                        before embarking on your journey, and they will offer valuable insights on things to do once you
+                        arrive! Whether you're seeking an incredible city tour or exploring local flavors near your
+                        hotel, this website's user-friendly tools make it effortless to find precisely what you need,
+                        even if you're unfamiliar with the area.🙂 </p>
+
+                    <h1 class="text-3xl text-left mt-4">Can I carry food on my Dhaka to Singapore flight?</h1>
+                    <p class="text-justify mt-4 text-xl">Certain airlines permit passengers to bring their own food on
+                        board, while others may have restrictions. It is advisable to confirm this policy with the
+                        specific airline before buying perishable items at the ticket counter or gate cashier lines.
+                    </p>
+                    <h1 class="text-3xl text-left mt-4">What are the current flight promotions available at Air Ambulance Bangladesh Ltd for the Dhaka to Singapore route?</h1>
+                    <p class="text-justify mt-4 text-xl">When searching for the finest deals on flights from Dhaka to
+                        Singapore, turn to airambulanceservicebd. They provide cashback and instant discounts that can
+                        result in significant savings on a single trip!</p>
+                </div>
+                <div class="text-white  font-sans ">
+
+                    <h1 class="text-4xl text-left mt-4">What is the baggage allowance for a flight from Dhaka to Singapore?
+                    </h1>
+                    <p class="text-justify mt-4 text-xl">Certain airlines permit one carry-on bag without additional
+                        charges, while others may impose fees for baggage. It's crucial, before traveling with any
+                        airline, to be well-informed about their rules. This knowledge helps you avoid the inconvenience
+                        of paying extra fees or facing delays at the ticket counter due to insufficient space in your
+                        luggage!</p>
+                    <p class="text-justify mt-4 text-xl">Each carrier has its own set guidelines about whether.
+                        Passengers may take bags into flight themselves and how much duty-free merchandise costs, just
+                        among other things. But this varies between companies based primarily on size restrictions that
+                        depend heavily on destination location, too, since some countries have imposed heavier
+                        limitations.</p>
+
+                    <img class="mt-20" src="./airsingapore images/s8.jpeg" alt="">
+
+                </div>
+                <div class="text-white  font-sans ">
+                    <img class="mt-4" src="./airsingapore images/s7.jpg" alt="">
+                    <h1 class="text-3xl text-left mt-4">Do airlines offering flights from Dhaka to Singapore provide sleeping accommodations?</h1>
+                    <p class="text-justify mt-4 text-xl">Airports worldwide are gaining popularity for their convenient
+                        accessibility and swift flights, and Dhaka's Suvarnabhumi Airport is no exception. This airport
+                        offers facilities for travelers seeking a place to rest during extended journeys, typically
+                        available at a per-use rate.</p>
+                    <p class="text-justify mt-4 text-xl">In recent years, various industries, including aviation, have
+                        experienced significant growth. Numerous airlines operate flights from airports near Dhaka,
+                        situated in proximity to Bangladesh—an emerging economy in Asia, credited to its thriving
+                        textile industry and a high GDP-per capita ratio, among other factors. However, upon arrival,
+                        travelers may discover that not all airports provide sleeping facilities. Notably, Singapore
+                        Changi stands out as the exception, offering such facilities on a Payable Per Use basis.</p>
+                    <h1 class="text-3xl text-left mt-4">Is a passport required for air travel between Dhaka and Singapore?</h1>
+                    <p class="text-justify mt-4 text-xl">Singapore is a captivating destination, brimming with
+                        attractions. Ensure you have a passport if your itinerary involves traveling to this vibrant
+                        location.</p>
+
+
+                </div>
+                <div class="text-white  font-sans ">
+
+                    <h1 class="text-4xl text-left mt-8">What is the maximum number of seats I can secure in a single reservation?</h1>
+                    <p class="text-justify mt-4 text-xl">You have the option to book seats for up to 9 individuals in a
+                        single transaction, making it ideal for bringing your family or friends together.</p>
+                    <h1 class="text-4xl text-left mt-8">Is it necessary to provide identification proof during the check-in process?</h1>
+                    <p class="text-justify mt-4 text-xl">A passport is a mandatory document for international flights.
+                        Ensure you have it with you, as failure to present it may result in denial of boarding.</p>
+                    <h1 class="text-4xl text-left mt-8">How can I retrieve my misplaced luggage from my flight from Dhaka to Singapore?</h1>
+                    <p class="text-justify mt-4 text-xl">Airlines are infamous for misplacing baggage, and losing
+                        something of value can be incredibly frustrating. Be sure to inquire with your airline about the
+                        potential for reimbursement by lodging a complaint through their channels before considering
+                        legal action!</p>
+                    <h1 class="text-4xl text-left mt-8">What is the duration for receiving confirmation on a flight ticket?</h1>
+                    <p class="text-justify mt-4 text-xl">It only takes a few minutes to receive ticket confirmation at
+                        your registered email address.</p>
+
+                    <img class="mt-16" src="./airsingapore images/s10.jpg" alt="">
+
+                </div>
+                <div class="text-white  font-sans ">
+                    <img class=" mt-0 lg:mt-[-99px]" src="./airsingapore images/s9.jpg" alt="">
+
+
+                </div>
+                <div class="text-white  font-sans ">
+
+                    <h1 class="text-4xl text-left mt-8">Is it possible to reserve tickets for someone else using my own account?</h1>
+                    <p class="text-justify mt-4 text-xl">You have the option to book a ticket for someone else as well!
+                        Simply furnish their personal details, and they will be able to travel on your behalf.</p>
+                    <h1 class="text-4xl text-left mt-8">Which classes are the most commonly reserved for a flight from Dhaka to Singapore?</h1>
+                    <p class="text-justify mt-4 text-xl">-When traveling from Dhaka to Singapore, some individuals opt
+                        for either economy or business class flights.</p>
+                    <h1 class="text-4xl text-left mt-8">What is the process for obtaining a boarding pass after securing a ticket for my flight from Dhaka to Singapore?</h1>
+                    <p class="text-justify mt-4 text-xl">Once you've booked your flight, proceed to the airport and
+                        inform the staff that it's time for check-in. After verifying the details, they will provide you
+                        with a boarding pass. Alternatively, you can explore web check-in on their website, which might
+                        be more convenient than printing paperwork at home before embarking on your journey to New York
+                        City or any other destination.</p>
+
+
+                    <img class="mt-16" src="./airsingapore images/s13.jpg" alt="">
+
+                </div>
+                <div class="text-white  font-sans ">
+                    <h1 class="text-4xl text-left mt-0 lg:mt-[-450px]">What are the most favored airlines globally?</h1>
+                    <p class="text-justify mt-4 text-xl">If you seek an excellent airline for your travels, consider
+                        Qatar Airways or Emirates. These two airlines transport passengers globally in luxurious
+                        aircraft that provide complimentary high-speed internet access. Another noteworthy option is
+                        Lufthansa, offering top-notch transportation with German engineering and service quality.
+                        Additionally, Singapore Airlines is another reputable choice.</p>
+                    <p class="text-justify mt-4 text-xl">Operating since 1963, they understand the significance of
+                        international travel. Experience their new economy class seat, which conveniently folds into an
+                        armrest, allowing you to use bathrooms without waiting in line.</p>
+                    <img class="mt-8 lg:mt-" src="./airsingapore images/s11.jpg" alt="">
+                    <h1 class="text-4xl text-left mt-8">What are the reasons for opting for business class instead of economy class?</h1>
+                    <p class="text-justify mt-4 text-xl">Opting for business class ensures a more comfortable flight,
+                        accompanied by unique perks such as spacious seats, improved meal options, and personalized
+                        services that justify the expense. Additionally, many airlines provide access to airport
+                        lounges, allowing travelers to unwind while awaiting their flights. This is an excellent option
+                        for those seeking profound relaxation during extended journeys on commercial airliners today!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class=" px-10 text-xl mb-6">
+                <p class="text-white text-justify text-left">In conclusion, you've reached the end, and you are now
+                    well-informed about Dhaka Airport. We sincerely hope your journey is enjoyable, but if you encounter
+                    any challenges, please inform us of how we can assist you. For additional information on travel or
+                    airports in general, feel free to explore our blog for more articles like these. Wishing you a
+                    fantastic and safe travel experience!</p>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4  md:gap-6">
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold">Our Address</h1>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="home-outline"></ion-icon>
+                    <p>Flat 4D, House 11, Road 18, <br> Uttara (Sector-4), Dhaka, 1230</p>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="mail"></ion-icon>
+                    <a href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-4">Services</h1>
+                <div class="mt-8 ">
+                    <ul class="list-disc">
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Singapore</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Thailand</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to India</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Malayasia</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Maldivs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-8">Links</h1>
+                <div class="text-white ">
+                    <a href="">
+                        <p class="mt-4">Terms and Conditions</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Privacy Policy</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Terms of Use</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Disclaimer</p>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-12">Social Links</h1>
+                <div class="flex gap-2 mt-8">
+                    <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon  class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                    <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                    <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="container mx-auto p-2">
+        <p class="text-center text-white ">©2024 Air Ambulance Bangladesh LtdService.</p>
+    </div>
+    <script>
+         function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.remove('hidden')) : (e.name = "menu",list.classList.remove('top-[80px]'), list.classList.add('hidden')) 
+        }
+
+    </script>
+</body>
+
+</html>

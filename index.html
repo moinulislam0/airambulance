@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html data-theme="dark ,light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Ambulace Bangladesh</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.jfif">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#header-content").load("./header.html");
+            $("#footer").load("./footer.html");
+        });
+    </script>
+    
+    <style type="text/tailwindcss">
+
+/* .animated-color {
+  width: 100px;
+  height: 100px;
+  color: rgb(255, 255, 255);
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {color: rgb(255, 255, 255);}
+  to {color: rgb(14, 194, 254);}
+} */
+
+
+.animated-color {
+  width: 100px;
+  height: 100px;
+  color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  25%   {color: rgb(49, 247, 72);}
+  25%  {color: yellow;}
+  50%  {color: rgb(49, 179, 249);}
+  100% {color: rgb(255, 255, 255);}
+}
+
+
+
+
+        .submenu {
+            display: none;
+        }
+
+        :root {
+            --color-primary: #050505;
+            --color-primary-light: #d96cdb;
+            --secondary-color: #0a5c83;
+        }
+
+        /* Show the submenu when hovering over the parent element */
+        .group:hover .submenu {
+            display: block;
+        }
+
+        @keyframes carousel {
+            100% {
+                transform: translateX(-250);
+            }
+        }
+        @layer utilities{
+            .nav::after{
+                @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute
+            }
+            .nav:hover::after{
+                @apply w-[100%]
+            }
+        }
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+
+        .scroll-text {
+            white-space: nowrap;
+            animation: scroll 10s linear infinite;
+        }
+
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            60% {
+                transform: translateX(30%);
+            }
+        }
+
+        .dropdown_item:hover .dropdown_arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body class="bg-black">
+    <div id="header-content"></div>
+    <div w3-include-html="./header.html"></div>
+    <header class=" bg-black p-4 mx-32 hidden lg:block">
+        <div class="container mx-auto text-white flex justify-between">
+             <div>
+                Air Ambulance Bangladesh Ltd
+            </div>
+            <div class="flex gap-3">
+                <div class="">
+                    <ion-icon class="text-white text-center text-2xl" name="mail-outline"></ion-icon>
+                </div>
+                <div>
+                    <a class="text-center" href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+            </div>
+            <div class="gap-2 flex">
+                <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon
+                        class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon
+                        class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="rounded sticky top-0 z-40 xl:z-50  bg-[var(--color-primary)] border-y-2 border-y-white-100">
+            <div class="flex  gap-4" style="justify-content: center; align-items: center;">
+
+
+                <img class="w-36 h-16 p-2  md:p-0 ml-[10px]" src="./images/logo.jfif" alt="">
+
+           
+
+                
+                <div style="width: 550%; display: flex; justify-content: center;">
+                    <button 
+                        class="relative bg-transparent  pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
+                        <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping">
+                        </div>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping">
+                        </div>
+                    </button>
+                </div>
+
+                <div
+                    class="container mx-auto flex justify-end   bg-[var(--color-primary)] rounded-md   text-black xl:text-white ">
+                    <span
+                        class="text-3xl cursor-pointer p-[5px] m-[5px] hover:border-dotted bg-zinc-700 text-white xl:hidden">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+
+                    </span>
+                    <ul
+                        class="uppercase nav1 xl:flex xl:items-center mx-8 p-4 z-[-1]
+                         xl:z-auto xl:static absolute bg-white xl:bg-[var(--color-primary)] w-full 
+                          letf-0 xl:w-auto xl:py-0 my-4 pl-8 xl:pl-0   xl:opacity-100 hidden  xl:text-middle trasition-all easein doration-500 m-[5px] ">
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="index.html">
+                                <p class="whitespace-nowrap">home</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group ">
+                            <a
+                                class="dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 ">
+                                <div class="flex gap-1 ">
+                                    <p class="whitespace-nowrap cursor-pointer">Service</p>
+                                </div> <ion-icon class="dropdown_arrow " name="chevron-up-outline"></ion-icon>
+                            </a>
+
+                            <div style="z-index: 99;"
+                                class="xl:absolute xl:bg-black text-black xl:text-white text-lg  w-64 drop-shadow-md ml-4 xl:ml-auto">
+                                <ul class="space-y-4 xl:w-56 group-hover:block submenu  p-2 ">
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdhaka.html
+                                        ">air ambulance in dhaka</a>
+
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airsingapore.html">air ambulance in Singapore</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airthailand.html">air ambulance in Thailand</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airmalayasia.html">air ambulance in Malayasia</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airindia.html">air ambulance in india</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdomestic.html">air helicopter Domestic</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="aircraft.html">
+                                <p class="whitespace-nowrap">AIRCRAFTS</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="domestic.html">
+                                <p class="whitespace-nowrap">Domestic </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="international.html">
+                                <p class="whitespace-nowrap">International </p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="about.html">
+                                <p class="whitespace-nowrap">about us </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="client.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">client
+                                    <p></p>
+                                </div>
+                            </a>
+
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="blog.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">blog </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group "><a
+                                class="  dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 lg:nav"
+                                href="contact.html">
+                                <p class="whitespace-nowrap">contact us</p>
+                            </a>
+
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </section>
+        <section>
+            <div class="w-full ">
+
+                <div
+                    class=" relative h-56  rounded-lg md:h-96  w-full lg:w-full  lg:h-[450px] xl:h-[500px] 2xl:h-[650px] ">
+
+                    <img class="h-full w-full " src="./images/img1.jpg" alt="">
+                    <div class="absolute inset-0 bg-black opacity-80"></div>
+                    <div class="absolute top-0 text-white text-center p-4 ml-2 lg:ml-16 ">
+                        <h1 class=" mt:4 lg:mt-12" style=" font-size: 4vw;">Air Ambulance Service in Bangladesh Domestic
+                            <br> & International By Exclusive Global Service
+                        </h1>
+                        <p class="mt-4 " style="font-size: 2vw;">Curly Airline sets a new standard, surpassing
+                            expectations for luxury and corporate private jet charter services. We take pride in
+                            delivering a professional and exceptional service.</p>
+                        <button
+                            class="mt-4 bg-black text-white uppercase p-4 hover:bg-white hover:text-black rounded"><a
+                                href="https://www.facebook.com/" target="_blank">GET FREE QUOTE</a></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="bg-black">
+            <div class="container mx-auto">
+                <h1 class="font-bold text-white text-center mt-2  text-2xl lg:text-3xl">Our Premium Air Ambulance
+                    Service In Bangladesh</h1>
+                <div class="mt-4 p-12 bg-white text-black">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="text-center">
+                            <h1 class="text-xl">LUXURY AND COMFORT</h1>
+                            <p>Your flying experience should be a source of pleasure, and we are dedicated to making
+                                your charter experience as luxurious and comfortable as possible.</p>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <h1 class="text-xl">SAFETY AND SECURITY</h1>
+                            <p>Air Ambulance Bangladesh Ltd is a platform dedicated to delivering a secure, efficient,
+                                and
+                                dependable air ambulance service for various urgent medical cases.</p>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <h1 class="text-xl">ALL AROUND THE GLOBE</h1>
+                            <p>Across the world, air ambulance services are extending medical aid to individuals in
+                                need. Air ambulance service providers strive to deliver superior services to their
+                                clientele.
+                            </p>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <h1 class="text-xl">EXPERIENCED CREW</h1>
+                            <p>Air Ambulance Bangladesh Ltd comprises a seasoned team of aviation professionals with
+                                diverse
+                                expertise. They provide a range of services, including aircraft maintenance and air
+                                ambulance assistance.</p>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <h1 class="text-xl">MODERN AIRCRAFTS</h1>
+                            <p>Air Ambulance Bangladesh Ltd is a contemporary air ambulance service offering emergency
+                                medical services and first aid to individuals in remote regions of Bangladesh.
+
+                                An air ambulance service is a medical assistance that transports critically ill or
+                                injured patients to a hospital by air.
+
+                                The "Modern Airlifts" section delves into the design and current applications of modern
+                                air ambulances.</p>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <h1 class="text-xl">FAST AND AFFORDABLE</h1>
+                            <p>Air Ambulance Bangladesh Ltd is an online platform enabling individuals to book air
+                                ambulances in Bangladesh at highly affordable rates.
+
+                                Our air ambulance service in BD is both swift and cost-effective, catering to
+                                individuals in urgent need of air ambulance services but with budget considerations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto">
+            <div>
+                <h1 class="text-center text-white mt-4 font-bold text-2xl lg:text-4xl">Confidentiality and Safety</h1>
+                <p class="text-center mt-4 text-l lg:text-xl text-white">Opting for an ACS charter ensures your privacy,
+                    and we will collaborate closely with your security provider on every aspect of your charter.</p>
+            </div>
+        </section>
+        <section class="container mx-auto mt-12">
+            <h1 class="text-white text-center font-bold text-2xl lg:text-4xl">Regions Served by Air Ambulance Services
+            </h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 ml-16 gap-4">
+                <div>
+                    <div class="flex gap-3">
+                        <a href=""><ion-icon class="text-white" name="airplane-outline"></ion-icon></a>
+
+                        <a class="text-white" href="">Dhaka to India</a>
+                    </div>
+                    <div class="flex gap-3 mt-2">
+                        <a href=""><ion-icon class="text-white" name="airplane-outline"></ion-icon></a>
+                        <a class="text-white " href="">Dhaka to Singapore</a>
+                    </div>
+                    <div class="flex gap-3 mt-2">
+                        <a href=""><ion-icon class="text-white" name="airplane-outline"></ion-icon></a>
+                        <a class="text-white " href="">Dhaka to Thailand</a>
+                    </div>
+                    <div class="flex gap-3 mt-2">
+                        <a href=""><ion-icon class="text-white" name="airplane-outline"></ion-icon></a>
+                        <a class="text-white " href="">Dhaka to Malayasia</a>
+                    </div>
+
+
+                </div>
+                <div class="w-[150px] h-[150px] flex justify-center">
+                    <img class="w-full h-full" src="./images/top-bottom.png" alt="">
+                </div>
+                <div>
+                    <div class="flex gap-3">
+                        <a href=""><ion-icon class="text-white" name="airplane-outline"></ion-icon></a>
+
+                        <a class="text-white" href="">Dhaka to India</a>
+                    </div>
+                    <div class="flex gap-3 mt-2">
+                        <a href=""><ion-icon class="text-white" name="airplane-outline"></ion-icon></a>
+                        <a class="text-white " href="">Dhaka to Singapore</a>
+                    </div>
+                    <div class="flex gap-3 mt-2">
+                        <a href=""><ion-icon class="text-white" name="airplane-outline"></ion-icon></a>
+                        <a class="text-white " href="">Dhaka to Thailand</a>
+                    </div>
+                    <div class="flex gap-3 mt-2">
+                        <a href=""><ion-icon class="text-white" name="airplane-outline"></ion-icon></a>
+                        <a class="text-white " href="">Dhaka to Malayasia</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto mt-8">
+            <div>
+                <h1 class="text-white text-center text-2xl lg:text-4xl font-bold">Specifications of Air Ambulances</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 text-white mt-8 gap-8">
+                    <div>
+                        <img src="./images/img1.jpg" alt="">
+                        <div>
+                            <p class="uppercase text-xl mt-2">AIR AMBULANCE LEAR JET 45</p>
+                            <div class="flex gap-3 mt-8">
+                                <i class="fa-solid fa-user-doctor"></i>
+                                <p>2 Doctors</p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <i class="fa-solid fa-hospital-user"></i>
+                                <p>1 Patient</p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <ion-icon name="bed-outline"></ion-icon>
+                                <p>Bed to Bed Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/img2.jpg" alt="">
+                        <div>
+                            <p class="uppercase text-xl mt-2">AIR AMBULANCE BEECH CRAFT 200</p>
+                            <div class="flex gap-3 mt-8">
+                                <i class="fa-solid fa-user-doctor"></i>
+                                <p>2 Doctors</p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <i class="fa-solid fa-hospital-user"></i>
+                                <p>1 Patient</p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <ion-icon name="bed-outline"></ion-icon>
+                                <p>Bed to Bed Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/img3.jpg" alt="">
+                        <div>
+                            <a href="">
+                                <p class="uppercase text-xl mt-2 hover:text-yellow-600">HELICOPTER DOMESTIC</p>
+                            </a>
+                            <div class="flex gap-3 mt-8">
+                                <i class="fa-solid fa-user-doctor"></i>
+                                <p>2 Doctors</p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <i class="fa-solid fa-hospital-user"></i>
+                                <p>1 Patient</p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <ion-icon name="bed-outline"></ion-icon>
+                                <p>Bed to Bed Service</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/img4.jpg" alt="">
+                        <div>
+                            <p class="uppercase text-xl mt-2">INTERNATIONAL AIR COMMERCIAL STRETCHER TRANSFER</p>
+                            <div class="flex gap-3 mt-8">
+                                <i class="fa-solid fa-user-doctor"></i>
+                                <p>2 Doctors</p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <i class="fa-solid fa-hospital-user"></i>
+                                <p>1 Patient</p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <ion-icon name="bed-outline"></ion-icon>
+                                <p>Bed to Bed Service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto mt-12">
+            <div>
+                <p class="text-center text-white text-2xl lg:text-4xl font-bold">Aircraft Charter for Business
+                    Professionals</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 mt-8">
+                    <p class="text-center text-white text-2xl">We offer aircraft charters tailored for business
+                        professionals to optimize their time efficiency. Presently, our aircraft charters cater
+                        specifically to business professionals, ensuring maximum time efficiency.</p>
+                    <img class="float-right" src="./images/air 1.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+        <section class="container mx-auto mt-8">
+            <div>
+                <h1 class="text-white text-2xl lg:text-4xl font-bold text-center">Our Achievements</h1>
+                <p class="text-center text-white mt-8">Curly Airline proudly sets a new standard, surpassing
+                    expectations for luxury and corporate private jet charter services. <br>
+                    We take pride in delivering a professional and personalized service. <a
+                        class="underline underline-offset-1" href=""> We Fly You To Over 5,000 <br>
+                        Destinations World Wide</a> </p>
+            </div>
+        </section>
+        <section class="container mx-auto mt-12">
+            <div>
+                <h1 class="text-center text-white text-2xl lg:text-4xl font-bold">Client Testimonials</h1>
+                <p class="text-center text-gray text-2xl mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Ut elit tellus, luctus nec ullamcorper mattis. <br> pulvinar dapibus leo.</p>
+                <div class="flex justify-center gap-3 mt-8">
+                    <img class="w-12 h-12 rounded-full" src="./images/pp1.png" alt="">
+                    <div class="text-gray text-center">
+                        <p>John Doe</p>
+                        <p>Desiger</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="container mx-auto">
+            <div>
+                <p class="font-extrabold text-center text-2xl lg:text-5xl text-white mt-16">FAQ</p>
+                <p class="text-center text-white mt-2">Frequently Asked Questions and Answers</p>
+            </div>
+
+            <div class=" xl:px-72">
+                <div tabindex="0" class="collapse border border-white lg:px-20 mt-6 bg-neutral-900 md:p-4 ">
+                    <div
+                        class="collapse-title whitespace-nowrap text-sm lg:text-xl font-bold flex text-white   hover:text-cyan-600 ">
+                        <ion-icon class="mt-1" name="caret-forward-outline"></ion-icon>
+                        <ion-icon class="mt-1" name="caret-up-outline"></ion-icon>
+                        CAN I EDIT THE FILES ?
+                    </div>
+                    <div class="collapse-content text-white">
+                        <p>Certainly, you can modify each individual element.</p>
+                    </div>
+                </div>
+
+                <div tabindex="0" class="collapse border border-white lg:px-20 mt-6 bg-neutral-900 md:p-4">
+                    <div
+                        class="collapse-title whitespace-nowrap text-sm lg:text-xl font-bold flex text-white   hover:text-cyan-600 ">
+                        <ion-icon class="mt-1" name="caret-forward-outline"></ion-icon>
+                        <ion-icon class="mt-1" name="caret-up-outline"></ion-icon>
+                        IS IT LAYERED ?
+                    </div>
+                    <div class="collapse-content text-white">
+                        <p>Yes, these files come with complete layering.</p>
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse border border-white lg:px-20 mt-6 bg-neutral-900 md:p-4">
+                    <div
+                        class="collapse-title whitespace-nowrap text-xs lg:text-xl font-bold flex text-white   hover:text-cyan-600 ">
+                        <ion-icon class="mt-1" name="caret-forward-outline"></ion-icon>
+                        <ion-icon class="mt-1" name="caret-up-outline"></ion-icon>
+                        WHAT DO I NEED TO OPEN THE FILES ?
+                    </div>
+                    <div class="collapse-content text-white">
+                        <p>Select the mask and press "B" to activate the brush tool.</p>
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse border border-white lg:px-20 mt-6 bg-neutral-900 md:p-4">
+                    <div
+                        class="collapse-title whitespace-nowrap text-sm lg:text-xl font-bold flex text-white   hover:text-cyan-600 ">
+                        <ion-icon class="mt-1" name="caret-forward-outline"></ion-icon>
+                        <ion-icon class="mt-1" name="caret-up-outline"></ion-icon>
+                        HOW CAN I EDIT THE MASKS ?
+                    </div>
+                    <div class="collapse-content text-white">
+                        <p>You will require Photoshop, preferably version CS6 or a more recent version.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="container mx-auto ">
+            <div class="">
+                 <p class="text-center text-white mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                    tellus, luctus nec ullamcorper mattis. </p>
+                <div class="flex justify-center">
+                    <img src="./images/air 2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4  md:gap-6">
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold">Our Address</h1>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="home-outline"></ion-icon>
+                    <p>Flat 4D, House 11, Road 18, <br> Uttara (Sector-4), Dhaka, 1230</p>
+                </div>
+                <div class="flex gap-3 text-white mt-4 text-wrap">
+                    <ion-icon class="text-white" name="mail-outline"></ion-icon> 
+                    <ion-icon class="text-white text-center text-2xl" name="mail-outline"></ion-icon>
+                    <!-- <a href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a> -->
+
+                    <a href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <!-- <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a> -->
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-4">Services</h1>
+                <div class="mt-8 ">
+                    <ul class="list-disc">
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Singapore</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Thailand</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to India</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Malayasia</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Maldivs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-8">Links</h1>
+                <div class="text-white ">
+                    <a href="">
+                        <p class="mt-4">Terms and Conditions</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Privacy Policy</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Terms of Use</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Disclaimer</p>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-12">Social Links</h1>
+                <div class="flex gap-2 mt-8">
+                    <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon
+                            class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                    <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                    <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-"
+                        target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="container mx-auto p-2">
+        <p class="text-center text-white ">©2024 Air Ambulance Bangladesh LtdService.</p>
+    </div>
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.remove('hidden')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.add('hidden'))
+        }
+
+    </script>
+</body>
+
+</html>

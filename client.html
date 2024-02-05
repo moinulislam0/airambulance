@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html data-theme="dark ,light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Ambulace Bangladesh</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.jfif">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#header-content").load("./header.html");
+            $("#footer").load("./footer.html");
+        });
+    </script>
+    <style type="text/tailwindcss">
+
+/* .animated-color {
+  width: 100px;
+  height: 100px;
+  color: rgb(255, 255, 255);
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {color: rgb(255, 255, 255);}
+  to {color: rgb(14, 194, 254);}
+} */
+
+
+.animated-color {
+  width: 100px;
+  height: 100px;
+  color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  25%   {color: rgb(49, 247, 72);}
+  25%  {color: yellow;}
+  50%  {color: rgb(49, 179, 249);}
+  100% {color: rgb(255, 255, 255);}
+}
+        .submenu {
+            display: none;
+        }
+
+        :root {
+            --color-primary: #050505;
+            --color-primary-light: #d96cdb;
+            --secondary-color: #0a5c83;
+        }
+
+        /* Show the submenu when hovering over the parent element */
+        .group:hover .submenu {
+            display: block;
+        }
+
+        @keyframes carousel {
+            100% {
+                transform: translateX(-250);
+            }
+        }
+        @layer utilities{
+            .nav::after{
+                @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute
+            }
+            .nav:hover::after{
+                @apply w-[100%]
+            }
+        }
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+
+        .scroll-text {
+            white-space: nowrap;
+            animation: scroll 10s linear infinite;
+        }
+
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            60% {
+                transform: translateX(30%);
+            }
+        }
+
+        .dropdown_item:hover .dropdown_arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body class="bg-black">
+    <div id="header-content"></div>
+    <div w3-include-html="./header.html"></div>
+    <header class=" bg-black p-4 mx-32 hidden lg:block">
+        <div class="container mx-auto text-white flex justify-between">
+             <div>
+                Air Ambulance Bangladesh Ltd
+            </div>
+            <div class="flex gap-3">
+                <div class="">
+                    <ion-icon class="text-white text-center text-2xl" name="mail-outline"></ion-icon>
+                </div>
+                <div>
+                    <a class="text-center" href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+            </div>
+            <div class="gap-2 flex">
+                <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="rounded sticky top-0 z-40 xl:z-50  bg-[var(--color-primary)] border-y-2 border-y-white-100">
+            <div class="flex  gap-4" style="justify-content: center; align-items: center;">
+
+
+                <img class="w-36 h-16 p-2  md:p-0 ml-[10px]" src="./images/logo.jfif" alt="">
+
+           
+
+                <!--  <div style="width: 550%; display: flex; justify-content: center;">
+                <button  class="relative bg-transparent mr-4 pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded"> 
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                    <div class="hidden md:block w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping"></div>
+                    <div class="hidden md:block w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping"></div>
+                </button>
+                </div> -->
+                <div style="width: 550%; display: flex; justify-content: center;">
+                    <button 
+                        class="relative bg-transparent  pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
+                        <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping">
+                        </div>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping">
+                        </div>
+                    </button>
+                </div>
+
+                <div
+                    class="container mx-auto flex justify-end   bg-[var(--color-primary)] rounded-md   text-black xl:text-white ">
+                    <span
+                        class="text-3xl cursor-pointer p-[5px] m-[5px] hover:border-dotted bg-zinc-700 text-white xl:hidden">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+
+                    </span>
+                    <ul
+                        class="uppercase nav1 xl:flex xl:items-center mx-8 p-4 z-[-1]
+                         xl:z-auto xl:static absolute bg-white xl:bg-[var(--color-primary)] w-full 
+                          letf-0 xl:w-auto xl:py-0 my-4 pl-8 xl:pl-0   xl:opacity-100 hidden  xl:text-middle trasition-all easein doration-500 m-[5px] ">
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="index.html">
+                                <p class="whitespace-nowrap">home</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group ">
+                            <a
+                                class="dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 ">
+                                <div class="flex gap-1 ">
+                                    <p class="whitespace-nowrap cursor-pointer">Service</p>
+                                </div> <ion-icon class="dropdown_arrow " name="chevron-up-outline"></ion-icon>
+                            </a>
+
+                            <div style="z-index: 99;"
+                                class="xl:absolute xl:bg-black text-black xl:text-white text-lg  w-64 drop-shadow-md ml-4 xl:ml-auto">
+                                <ul class="space-y-4 xl:w-56 group-hover:block submenu  p-2 ">
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdhaka.html
+                                        ">air ambulance in dhaka</a>
+
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airsingapore.html">air ambulance in Singapore</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airthailand.html">air ambulance in Thailand</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airmalayasia.html">air ambulance in Malayasia</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airindia.html">air ambulance in india</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdomestic.html">air helicopter Domestic</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="aircraft.html">
+                                <p class="whitespace-nowrap">AIRCRAFTS</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="domestic.html">
+                                <p class="whitespace-nowrap">Domestic </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="international.html">
+                                <p class="whitespace-nowrap">International </p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="about.html">
+                                <p class="whitespace-nowrap">about us </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="client.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">client
+                                    <p></p>
+                                </div>
+                            </a>
+
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="blog.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">blog </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group "><a
+                                class="  dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 lg:nav"
+                                href="contact.html">
+                                <p class="whitespace-nowrap">contact us</p>
+                            </a>
+
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="container mx-auto mt-4">
+            <div class="text-white text-center text-5xl font-sans font-bold uppercase">
+                <h1>Our All Clients</h1>
+            </div>
+        </section>
+        <section class="mt-4 container mx-auto  ">
+            <div class="mt-8 flex justify-center items-center sm:p-0">
+                <div
+                    class=" grid grid-cols-1 gap-3  sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 [&>img:not(:first-child)]:mt-3 lg:[&>img:not(:first-child)]:mt-8">
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c1.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c2.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c3.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c4.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c5.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c6.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c7.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c8.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c9.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c10.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c11.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c12.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c13.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c14.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c15.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c16.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c17.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c18.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c19.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c20.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c21.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c22.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c23.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c24.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c25.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c26.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c27.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] hover:brightness-50">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c28.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c29.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c30.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c31.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c32.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c33.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c34.png" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c35.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c36.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c37.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50 " src="./client images/c38.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c39.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c40.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c41.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c42.jpg" alt=""></a>
+                    </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                    class="w-[300px] h-[250px] ">
+                    <a><img class="w-full h-full hover:brightness-50" src="./client images/c43.jpg" alt=""></a>
+                </div>
+                    <div type="button" data-modal-target="static-modal" data-modal-toggle="static-modal"
+                        class="w-[300px] h-[250px] ">
+                        <a><img class="w-full h-full hover:brightness-50" src="./client images/c44.jpg" alt=""></a>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- Main modal -->
+                <div id="static-modal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full mt-12 md:inset-0 h-full ">
+                    <div style="width: 70%;" class="relative p-4  max-h-full mt-44">
+                        <!-- Modal content -->
+                        <div class="relative bg-none rounded-lg shadow mt-2">
+                            <!-- Modal header -->
+                            <div class="flex items-center justify-between p-4 md:p-5  ">
+
+                                <button type="button"
+                                    class="text-gray-400 bg-none   rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center  "
+                                    data-modal-hide="static-modal">
+                                    <svg class="w-3 h-3 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 14 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                    </svg>
+                                    <span class="sr-only">Close modal</span>
+                                </button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="p-4 md:p-5 space-y-4">
+                                <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                                    <!-- Carousel wrapper -->
+                                    <div
+                                        class="relative h-56 overflow-hidden rounded-lg md:h-[550px] w-full lg:w-full h-[550px] lg:h-[750px]">
+                                        <!-- Item 1 -->
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c1.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance private jet </p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance private jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c2.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance private jet</p>
+                                                        <p class="w-full text-center text-[#fff]">  air ambulance private jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c3.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance private jet</p>
+                                                        <p class="w-full text-center text-[#fff]">  air ambulance private jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c4.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            Helicopter  Air Ambulance </p>
+                                                        <p class="w-full text-center text-[#fff]">  Helicopter  Air Ambulance
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c5.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance from Bangladesh to Malayasia</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance from Bangladesh to Malayasia
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c6.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                           air ambulance stretcher</p>
+                                                        <p class="w-full text-center text-[#fff]">air ambulance stretcher
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c7.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance private jet in Bangladesh</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance private jet in Bangladesh
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c8.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance private jet in Bangladesh</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance private jet in Bangladesh
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c9.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance private jet in Bangladesh</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance private jet in Bangladesh
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c10.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance in Bangladesh</p>
+                                                        <p class="w-full text-center text-[#fff]">air ambulance in Bangladesh
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c11.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance private jet in Bangladesh</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance private jet in Bangladesh
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c12.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            International Air Ambulance service in Bangladesh</p>
+                                                        <p class="w-full text-center text-[#fff]">  International Air Ambulance service in Bangladesh
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c13.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                           international air commercial stretcher  transfer</p>
+                                                        <p class="w-full text-center text-[#fff]">  international air commercial stretcher  transfer
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c14.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            international air commercial stretcher  transfer</p>
+                                                        <p class="w-full text-center text-[#fff]">  international air commercial stretcher  transfer
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c15.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance Interior</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance Interior
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c16.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance stretcher transfer</p>
+                                                        <p class="w-full text-center text-[#fff]">   air ambulance stretcher transfer
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c17.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance private jet</p>
+                                                        <p class="w-full text-center text-[#fff]">  air ambulance private jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c18.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            Air Ambulance service in dhaka</p>
+                                                        <p class="w-full text-center text-[#fff]">  Air Ambulance service in dhaka
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c19.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                             Air Ambulance private jet</p>
+                                                        <p class="w-full text-center text-[#fff]"> 
+                                                            Air Ambulance private jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c20.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            Air Ambulance private jet</p>
+                                                        <p class="w-full text-center text-[#fff]"> Air Ambulance private jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c21.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            international air commercial stretcher  transfer</p>
+                                                        <p class="w-full text-center text-[#fff]">  international air commercial stretcher  transfer
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c22.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            Air Ambulance helicopter</p>
+                                                        <p class="w-full text-center text-[#fff]">   Air Ambulance helicopter
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c23.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                           air ambulance jet</p>
+                                                        <p class="w-full text-center text-[#fff]">  air ambulance jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c24.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                           air ambulance in dhaka</p>
+                                                        <p class="w-full text-center text-[#fff]">air ambulance in dhaka
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c25.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance in dhaka</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance in dhaka
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c26.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance Interior</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance Interior
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c27.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance helicopter  stretcher transfer</p>
+                                                        <p class="w-full text-center text-[#fff]">  air ambulance helicopter  stretcher transfer
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c28.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                           air ambulance jet</p>
+                                                        <p class="w-full text-center text-[#fff]">  air ambulance jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c29.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            large Air Ambulance </p>
+                                                        <p class="w-full text-center text-[#fff]"> large Air Ambulance 
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c30.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            Helicopter Domestic Interior</p>
+                                                        <p class="w-full text-center text-[#fff]">  Helicopter Domestic Interior
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c31.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                             Air Ambulance Interior</p>
+                                                        <p class="w-full text-center text-[#fff]"> Air Ambulance Interior
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c32.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            Air Ambulance lear jet 45</p>
+                                                        <p class="w-full text-center text-[#fff]">Air Ambulance lear jet 45
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c33.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                           air ambulance jet</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c34.png"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            air ambulance service jet</p>
+                                                        <p class="w-full text-center text-[#fff]"> air ambulance service jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c35.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            Air Ambulance lear jet 45</p>
+                                                        <p class="w-full text-center text-[#fff]"> Air Ambulance lear jet 45
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c36.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            International Air Ambulance Private Jet</p>
+                                                        <p class="w-full text-center text-[#fff]"> International Air
+                                                            Ambulance Private Jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c37.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            img_1480</p>
+                                                        <p class="w-full text-center text-[#fff]"> img_1480
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c38.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            img_0817</p>
+                                                        <p class="w-full text-center text-[#fff]"> img_0817
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c39.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            img_1485</p>
+                                                        <p class="w-full text-center text-[#fff]">  img_1485
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c40.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            img_1486</p>
+                                                        <p class="w-full text-center text-[#fff]">  img_1486
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c41.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            International Air Ambulance Private Jet</p>
+                                                        <p class="w-full text-center text-[#fff]"> International Air
+                                                            Ambulance Private Jet
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c42.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            img_2949</p>
+                                                        <p class="w-full text-center text-[#fff]">  img_2949
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c43.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            img_1488</p>
+                                                        <p class="w-full text-center text-[#fff]">  img_1488
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out h-[100%]" data-carousel-item>
+                                            <div
+                                                class="absolute  w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[100%]">
+
+                                                <div class="h-[100%]">
+                                                    <img src="./client images/c44.jpg"
+                                                        class="brightness-50 w-full h-[80%]">
+                                                    <div class="w-full text-center h-[10%] uppercase mt-8">
+                                                        <p class="w-full text-center text-xl font-[30px] text-[#fff]">
+                                                            img_0815t</p>
+                                                        <p class="w-full text-center text-[#fff]">  img_0815
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slider indicators -->
+                                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50  hover:bg-white"
+                                            aria-current="true" aria-label="Slide 1"
+                                            data-carousel-slide-to="0"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 2"
+                                            data-carousel-slide-to="1"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50  hover:bg-white"
+                                            aria-current="false" aria-label="Slide 3"
+                                            data-carousel-slide-to="2"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50  hover:bg-white"
+                                            aria-current="false" aria-label="Slide 4"
+                                            data-carousel-slide-to="3"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 5"
+                                            data-carousel-slide-to="4"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 6"
+                                            data-carousel-slide-to="5"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 7"
+                                            data-carousel-slide-to="6"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 8"
+                                            data-carousel-slide-to="7"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 9"
+                                            data-carousel-slide-to="8"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 10"
+                                            data-carousel-slide-to="9"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 11"
+                                            data-carousel-slide-to="10"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 12"
+                                            data-carousel-slide-to="11"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50  hover:bg-white"
+                                            aria-current="true" aria-label="Slide 13"
+                                            data-carousel-slide-to="0"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 14"
+                                            data-carousel-slide-to="1"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50  hover:bg-white"
+                                            aria-current="false" aria-label="Slide 15"
+                                            data-carousel-slide-to="2"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50  hover:bg-white"
+                                            aria-current="false" aria-label="Slide 16"
+                                            data-carousel-slide-to="3"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 17"
+                                            data-carousel-slide-to="4"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 18"
+                                            data-carousel-slide-to="5"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 19"
+                                            data-carousel-slide-to="6"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 20"
+                                            data-carousel-slide-to="7"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 21"
+                                            data-carousel-slide-to="8"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 22"
+                                            data-carousel-slide-to="9"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 23"
+                                            data-carousel-slide-to="10"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 24"
+                                            data-carousel-slide-to="11"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50  hover:bg-white"
+                                            aria-current="true" aria-label="Slide 25"
+                                            data-carousel-slide-to="0"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 26"
+                                            data-carousel-slide-to="1"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50  hover:bg-white"
+                                            aria-current="false" aria-label="Slide 27"
+                                            data-carousel-slide-to="2"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50  hover:bg-white"
+                                            aria-current="false" aria-label="Slide 28"
+                                            data-carousel-slide-to="3"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 29"
+                                            data-carousel-slide-to="4"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 30"
+                                            data-carousel-slide-to="5"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 31"
+                                            data-carousel-slide-to="6"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 32"
+                                            data-carousel-slide-to="7"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 33"
+                                            data-carousel-slide-to="8"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 34"
+                                            data-carousel-slide-to="9"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 35"
+                                            data-carousel-slide-to="10"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 36"
+                                            data-carousel-slide-to="11"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 37"
+                                            data-carousel-slide-to="8"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 38"
+                                            data-carousel-slide-to="9"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 39"
+                                            data-carousel-slide-to="10"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full bg-white/50 hover:bg-white"
+                                            aria-current="false" aria-label="Slide 40"
+                                            data-carousel-slide-to="11"></button>
+                                    </div>
+                                    <!-- Slider controls -->
+                                    <button type="button"
+                                        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                        data-carousel-prev>
+                                        <span
+                                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                                            <svg class="w-4 h-4 text-white" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+                                            </svg>
+                                            <span class="sr-only">Previous</span>
+                                        </span>
+                                    </button>
+                                    <button type="button"
+                                        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                        data-carousel-next>
+                                        <span
+                                            class="flex items-center justify-center  w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                                            <svg class="w-4 h-4 text-white" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                                            </svg>
+                                            <span class="sr-only">Next</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Modal footer -->
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 mt-8">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4  md:gap-6">
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold">Our Address</h1>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="home-outline"></ion-icon>
+                    <p>Flat 4D, House 11, Road 18, <br> Uttara (Sector-4), Dhaka, 1230</p>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="mail"></ion-icon>
+                    <a href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-4">Services</h1>
+                <div class="mt-8 ">
+                    <ul class="list-disc">
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Singapore</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Thailand</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to India</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Malayasia</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Maldivs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-8">Links</h1>
+                <div class="text-white ">
+                    <a href="">
+                        <p class="mt-4">Terms and Conditions</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Privacy Policy</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Terms of Use</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Disclaimer</p>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-12">Social Links</h1>
+                <div class="flex gap-2 mt-8">
+                    <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon  class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                    <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                    <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="container mx-auto p-2">
+        <p class="text-center text-white ">©2024 Air Ambulance Bangladesh LtdService.</p>
+    </div>
+    <script>
+         function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.remove('hidden')) : (e.name = "menu",list.classList.remove('top-[80px]'), list.classList.add('hidden')) 
+        }
+
+    </script>
+</body>
+
+</html>

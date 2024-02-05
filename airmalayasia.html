@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html data-theme="dark ,light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Ambulace Bangladesh</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.jfif">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#header-content").load("./header.html");
+            $("#footer").load("./footer.html");
+        });
+    </script>
+    <style type="text/tailwindcss">
+
+/* .animated-color {
+  width: 100px;
+  height: 100px;
+  color: rgb(255, 255, 255);
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {color: rgb(255, 255, 255);}
+  to {color: rgb(14, 194, 254);}
+} */
+
+
+.animated-color {
+  width: 100px;
+  height: 100px;
+  color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  25%   {color: rgb(49, 247, 72);}
+  25%  {color: yellow;}
+  50%  {color: rgb(49, 179, 249);}
+  100% {color: rgb(255, 255, 255);}
+}
+        .submenu {
+            display: none;
+        }
+
+        :root {
+            --color-primary: #050505;
+            --color-primary-light: #d96cdb;
+            --secondary-color: #0a5c83;
+        }
+
+        /* Show the submenu when hovering over the parent element */
+        .group:hover .submenu {
+            display: block;
+        }
+
+        @keyframes carousel {
+            100% {
+                transform: translateX(-250);
+            }
+        }
+        @layer utilities{
+            .nav::after{
+                @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute
+            }
+            .nav:hover::after{
+                @apply w-[100%]
+            }
+        }
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+
+        .scroll-text {
+            white-space: nowrap;
+            animation: scroll 10s linear infinite;
+        }
+
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            60% {
+                transform: translateX(30%);
+            }
+        }
+
+        .dropdown_item:hover .dropdown_arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body class="bg-black">
+    <div id="header-content"></div>
+    <div w3-include-html="./header.html"></div>
+    <header class=" bg-black p-4 mx-32 hidden lg:block">
+        <div class="container mx-auto text-white flex justify-between">
+             <div>
+                Air Ambulance Bangladesh Ltd
+            </div>
+            <div class="flex gap-3">
+                <div class="">
+                    <ion-icon class="text-white text-center text-2xl" name="mail-outline"></ion-icon>
+                </div>
+                <div>
+                    <a class="text-center" href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+            </div>
+            <div class="gap-2 flex">
+                <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="rounded sticky top-0 z-40 xl:z-50  bg-[var(--color-primary)] border-y-2 border-y-white-100">
+            <div class="flex  gap-4" style="justify-content: center; align-items: center;">
+
+
+                <img class="w-36 h-16 p-2  md:p-0 ml-[10px]" src="./images/logo.jfif" alt="">
+
+           
+
+                <!--  <div style="width: 550%; display: flex; justify-content: center;">
+                <button  class="relative bg-transparent mr-4 pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded"> 
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                    <div class="hidden md:block w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping"></div>
+                    <div class="hidden md:block w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping"></div>
+                </button>
+                </div> -->
+                <div style="width: 550%; display: flex; justify-content: center;">
+                    <button 
+                        class="relative bg-transparent  pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
+                        <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping">
+                        </div>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping">
+                        </div>
+                    </button>
+                </div>
+
+                <div
+                    class="container mx-auto flex justify-end   bg-[var(--color-primary)] rounded-md   text-black xl:text-white ">
+                    <span
+                        class="text-3xl cursor-pointer p-[5px] m-[5px] hover:border-dotted bg-zinc-700 text-white xl:hidden">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+
+                    </span>
+                    <ul
+                        class="uppercase nav1 xl:flex xl:items-center mx-8 p-4 z-[-1]
+                         xl:z-auto xl:static absolute bg-white xl:bg-[var(--color-primary)] w-full 
+                          letf-0 xl:w-auto xl:py-0 my-4 pl-8 xl:pl-0   xl:opacity-100 hidden  xl:text-middle trasition-all easein doration-500 m-[5px] ">
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="index.html">
+                                <p class="whitespace-nowrap">home</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group ">
+                            <a
+                                class="dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 ">
+                                <div class="flex gap-1 ">
+                                    <p class="whitespace-nowrap cursor-pointer">Service</p>
+                                </div> <ion-icon class="dropdown_arrow " name="chevron-up-outline"></ion-icon>
+                            </a>
+
+                            <div style="z-index: 99;"
+                                class="xl:absolute xl:bg-black text-black xl:text-white text-lg  w-64 drop-shadow-md ml-4 xl:ml-auto">
+                                <ul class="space-y-4 xl:w-56 group-hover:block submenu  p-2 ">
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdhaka.html
+                                        ">air ambulance in dhaka</a>
+
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airsingapore.html">air ambulance in Singapore</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airthailand.html">air ambulance in Thailand</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airmalayasia.html">air ambulance in Malayasia</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airindia.html">air ambulance in india</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdomestic.html">air helicopter Domestic</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="aircraft.html">
+                                <p class="whitespace-nowrap">AIRCRAFTS</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="domestic.html">
+                                <p class="whitespace-nowrap">Domestic </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="international.html">
+                                <p class="whitespace-nowrap">International </p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="about.html">
+                                <p class="whitespace-nowrap">about us </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="client.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">client
+                                    <p></p>
+                                </div>
+                            </a>
+
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="blog.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">blog </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group "><a
+                                class="  dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 lg:nav"
+                                href="contact.html">
+                                <p class="whitespace-nowrap">contact us</p>
+                            </a>
+
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </section>
+        <section>
+            <div class="w-full">
+                <div class="relative  h-24 rounded-lg md:h-28 w-full lg:w-full lg:h-[150px] xl:h-[180px] 2xl:h-[200px]">
+                    <img class="h-full w-full" src="./images/img1.jpg" alt="">
+
+                    <div class="absolute inset-0 bg-black opacity-80"></div>
+                    <div class="absolute top-0 text-white text-center  lg:mt-12 " style="width: 100%;">
+                        <p class="mt-4 text-3xl lg:text-6xl font-bold uppercase">Air Ambulance in Malayasia</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="mt-4 container mx-auto ">
+            <div class="grid grid-cols-1 lg:grid-cols-2 p-10 gap-4">
+                <div class="text-white text-center font-sans ">
+                    <h1 class="text-left text-white font-bold text-2xl mt-8">The Ability to Travel Anywhere</h1>
+                    <p class="text-left mt-4 text-l">Your dream of the ideal getaway has become a reality. Experience
+                        stylish travel anytime, anywhere with this incredible helicopter ride! Book now and relish the
+                        unparalleled freedom that air transportation offers.</p>
+                    <h1 class="text-left text-white font-bold text-2xl mt-8">Corporate Air Travel by Jet Plane</h1>
+                    <p class="text-left mt-4 text-l">If you are seeking a reliable air ambulance service, consider AAT
+                        Aviation, a professional operator based in India. They specialize in medical evacuation flights
+                        across Asia and provide 24/7 emergency services through their website, offering competitive
+                        rates. Their international travel packages can potentially save patients thousands of dollars in
+                        expensive treatment costs abroad.</p>
+                    <p class="text-left mt-4 text-l">Book now for professional corporate and air ambulance flights in
+                        India, Thailand, Malaysia, Singapore, Hong Kong, and China.</p>
+                    <h1 class="text-left text-white font-bold text-2xl mt-8">Medical Air Transport Service</h1>
+                    <p class="text-left mt-4 text-l">You can choose between an international or domestic flight based on
+                        your preference. If the individual requiring transport is situated far from a hospital with
+                        intensive care units, a helicopter may be the optimal choice. Otherwise, private jets will
+                        suffice.</p>
+                    <img class="mt-4" src="./airmalayasia images/m1.jpg" alt="">
+                </div>
+                <div class="text-white  font-sans ">
+                    <img class="mt-4" src="./airmalayasia images/m2.jpg" alt="">
+                    <h1 class="text-3xl text-left mt-4">Medical Flights</h1>
+                    <p class="text-justify mt-4 text-l">Nobody desires to be unwell and have their loved ones travel
+                        long distances to care for them. That's why air ambulances are always prepared to provide
+                        medical services, facilitating swift transportation back home without relying on another person.
+                        This alleviates the need for loved ones to console the patient during this challenging period or
+                        face the dilemma of expensive hotel accommodations near airports, which might not even allow
+                        pets. Our services, conducted by qualified pilots and supported by skilled flight nurses
+                        meticulously monitoring every detail of your journey, ensure you never feel alone or abandoned
+                        at any point throughout the entire process!</p>
+
+
+                </div>
+                <div class="text-white  font-sans ">
+
+                    <h1 class="text-3xl text-left mt-4">How to Book an Air Ambulance</h1>
+                    <p class="text-justify mt-4 text-l">Securing an Air Ambulance is a straightforward process! Simply
+                        share details about your destination and departure location to determine the cost of hiring a
+                        helicopter. We'll provide a pricing estimate, ensuring all passengers can confidently assess the
+                        value they'll receive before making a commitment. <br><br>
+
+                        Feel free to reach out to us through email at: <br><br>
+
+                        For additional information and pricing, please reach out to us via email at (Email) or give us a
+                        call at (Number).<br><br>
+
+                        Chartered domestic and international air ambulance/airlines documents: <br><br>
+
+                        Passport with a validity of six months.<br><br>
+
+                        A copy of the visa for the respective country (the destination you intend to visit).</p>
+
+
+
+                    <img class="mt-16" src="./airmalayasia images/m3.jpg" alt="">
+
+                </div>
+                <div class="text-white  font-sans ">
+                    <img class="mt-0 lg:mt-[-650px]" src="./airmalayasia images/m4.jpg" alt="">
+                    <h1 class="text-3xl text-left mt-16">Global Air Ambulance Services from Dhaka</h1>
+                    <p class="text-justify mt-4 text-l">We are delighted to provide our specialized service for
+                        commercial stretchers and wheelchairs. Our commitment includes full medical support on board,
+                        complete with oxygen tanks. Ensuring the safety of your patient is my foremost concern as we
+                        navigate through Dhaka airport within the specified import permit processing time window (8-10
+                        am). The rates outlined below encompass all necessary fees.</p>
+                    <p class="text-justify mt-4 text-l">Hourly service charges, per-trip service charge, rental charges,
+                        oxygen delivery (minimum 2 Ltrs, payable by daily/weekly contract), bike fee, ambulance booking,
+                        ground handling services, immigration, medical inspection, baggage weight limit, drug supply,
+                        and all other associated expenses.</p>
+
+                </div>
+                <div class="text-white  font-sans ">
+
+                    <h1 class="text-3xl text-left mt-4">INTERNATIONAL ROUTE</h1>
+                    <p class="text-justify mt-4 text-l">Airports serve as crucial hubs for travelers to reunite with
+                        their loved ones. It's a space where individuals seek comfort, safety, and excitement, and
+                        perhaps even a touch of romance! Therefore, it's imperative for these airports to maintain a
+                        spacious and inviting atmosphere, ensuring that upon reaching your gate after hours of air
+                        travel across oceans, they don't feel overly daunting or confining..</p>
+
+                    <h1 class="text-3xl text-left mt-4">DOMESTIC ROUTE</h1>
+                    <p class="text-justify mt-4 text-xl">Airport routes (IATA) and airport codes: C 208B, PC-12, P180.
+                        Rate per hour – USD 1500/HR.</p>
+
+                    <p class="text-justify mt-4 text-l">For the C208, the rate is $1500 per hour, while for the PC-12,
+                        it is $1250 per hour for a 180-minute flight booked 15 minutes prior to the departure time. The
+                        route allows for 5 hours on the ground without charge if only one passenger travels with you
+                        during this waiting period. However, if two people share an economy seat costing approximately
+                        $3 each way ($150 total), an additional fee of $600 would be incurred. <br><br>
+
+                        3. Charges for overnight stay, accommodation, food, and transportation will be applicable. </p>
+
+                    <img class="mt-20" src="./airmalayasia images/m5.jpg" alt="">
+
+                </div>
+                <div class="text-white  font-sans ">
+                    <img class="mt-8 lg:mt-[-450px]" src="./airmalayasia images/m7.jpg" alt="">
+                    <h1 class="text-3xl text-left mt-4">Global Air Medical Transportation Services</h1>
+                    <p class="text-justify mt-4 text-l">Global Air Ambulance possesses unique qualifications for
+                        repatriating your loved ones in need of medical evacuation. Our patient transports involve
+                        intricate procedures, and we introduce a level of complexity that is best managed by us—the
+                        professionals at Global Ambulance Services Worldwide! With a track record of over 200,000 safe
+                        flights worldwide and a 100% safety record, we demonstrate our unwavering dedication to caring
+                        for patients around the world who require air transport from abroad back to their home country's
+                        hospitals or residences. To answer the question: When should you call (number)? Now would be an
+                        opportune time, especially considering the potential existing circumstances.<br> <br>
+
+                        Global Air Ambulance has been a reliable source of assistance for individuals worldwide in their
+                        moments of need. We have successfully transported patients from every country and continent,
+                        including places affected by war or conflict, providing our expertise once they were entrusted
+                        to our team for assistance in returning home after completing treatment. As an international air
+                        ambulance service provider based in Canada, we are equipped to handle any situation promptly,
+                        ensuring you do not lose crucial time on critical care patient matters. Contact us now for
+                        immediate support! <br><br>
+
+                        Global Air Ambulance has emerged as a prominent leader in the industry, consistently
+                        transporting numerous COVID patients on a weekly basis since the commencement of the pandemic.
+                        Their unmatched overseas permit and medical records requirements set them apart from other
+                        companies, a testament to their expertise in managing such situations abroad before venturing
+                        into the current scenario. They have successfully facilitated the transfer of individuals from
+                        countries severely impacted by the virus, such as Portugal. Despite Portugal having only
+                        reported one case so far, the risk was elevated due to its shared borders with Spain, a country
+                        experiencing several outbreaks as well. <br><br>
+
+                        Global Air Ambulance provides a diverse selection of aircraft options for you to consider.
+                        Additionally, we offer medical team and transport services to ensure your timing needs are
+                        accommodated. If calling (Number) is not convenient, feel free to engage in a chat with one of
+                        our case managers who are available to assist you at any time! </p>
+
+
+                </div>
+                <div class="text-white  font-sans ">
+
+                    <h1 class="text-4xl text-left mt-4">Global Air Ambulance Services</h1>
+                    <p class="text-justify mt-4 text-l">Opting for an international air ambulance is the optimal means
+                        to ensure your patient receives the necessary medical care. When you engage our services, we
+                        dispatch a jet with a skilled crew that travels to any required location, meticulously
+                        considering every detail to facilitate their swift arrival. This comes at a minimal cost
+                        compared to alternative on-site or off-site transport options, such as overland vehicles.
+                        <br><br>
+
+                        A: This passage offers background information on the workings of airport terminal operations,
+                        detailing customs and immigration processing before patients are transported onto private jets,
+                        where aircraft maintenance occurs during flight. However, it lacks in-depth analysis concerning
+                        the subsequent steps once these procedures have been concluded.
+                    </p>
+
+
+
+                </div>
+                <div>
+
+                </div>
+                <div class="text-white  font-sans ">
+
+                    <h1 class="text-4xl text-center mt-4">Global Airline Medical Stretcher Patient Transport
+                    </h1>
+                    <p class="text-justify mt-4 text-l">For international patients, an airline medical stretcher serves
+                        as a cost-effective option that can facilitate critical care. While airline stretchers may not
+                        be available in America, they offer comprehensive ICU services for individuals worldwide,
+                        spanning regions such as Asia, Europe, the Middle East, Australia, and Africa.<br><br>
+
+                        At the commencement of an international airline medical stretcher patient transport, your team
+                        will be ready for you and your loved one at a commercial airport. They will assist in boarding,
+                        ensuring the patient is surrounded by curtains for continuous monitoring during the overseas or
+                        multi-state flight. We simplify the process with our comprehensive monitoring system. Upon safe
+                        arrival, another ambulance awaits, ensuring a seamless transition. This time around, blankets
+                        are even provided if needed, as these flights can sometimes get quite cold. <br><br>
+
+                        The input details what occurs during the "most exciting part" – international travel.</p>
+
+
+                    <img class="mt-4" src="./airmalayasia images/m8.jpg" alt="">
+                </div>
+                <div class="text-white  font-sans ">
+                    <img class="mt-4" src="./airmalayasia images/m9.jpg" alt="">
+                    <h1 class="text-3xl text-left mt-4">Do airlines offering flights from Dhaka to Singapore provide sleeping accommodations?</h1>
+                    <p class="text-justify mt-4 text-xl">Airports worldwide are gaining popularity for their convenient
+                        accessibility and swift flights, with Dhaka's Suvarnabhumi Airport being one such example. This
+                        airport offers facilities to cater to travelers in need of a rest during extended journeys,
+                        typically available at a usage fee.</p>
+                    <p class="text-justify mt-4 text-xl">In recent years, substantial growth has been observed across
+                        various sectors, including aviation. Many airlines operate flights from Dhaka, situated near
+                        Bangladesh, which is recognized as one of Asia's emerging economies, driven by the development
+                        of its textile industry and a high GDP-per capita ratio, among other factors. However, upon
+                        arriving, travelers may discover that not all airports provide sleeping facilities, although
+                        some do—Singapore Changi being the exception, offering such amenities on a Payable Per Use
+                        basis.</p>
+                    <h1 class="text-3xl text-left mt-4">Is a passport required for air travel between Dhaka and Singapore?</h1>
+                    <p class="text-justify mt-4 text-xl">Exploring Singapore is a thrilling experience with a myriad of
+                        offerings, but ensure you have a passport if your itinerary involves traveling to this
+                        destination.</p>
+
+
+                </div>
+                <div class="text-white  font-sans ">
+
+                    <h1 class="text-4xl text-left mt-8">Global Airline Medical Escort Services</h1>
+                    <p class="text-justify mt-4 text-l">Numerous patients can be transported via an international
+                        airline medical escort, often at a significantly reduced cost compared to an air ambulance. With
+                        this alternative, a registered nurse specializing in inflight care will accompany the patient,
+                        utilizing a wheelchair van to navigate commercial airports. This nurse will stay with the
+                        patient in their seat throughout the flight, ensuring a seamless journey to the destination
+                        country. This approach alleviates concerns for both you and your loved one during the extended
+                        trip. Additionally, the accompanying nurse provides essential care during travel, utilizing
+                        lie-flat seats that can be adjusted as needed, optimizing every available inch for comfort. This
+                        thoughtful approach minimizes discomfort, addressing issues like stomachaches or cramped spaces
+                        caused by inadequate blood circulation due to pressure changes during altitude shifts throughout
+                        the flight.</p>
+                    <h1 class="text-4xl text-left mt-8">International Ground Ambulance Services</h1>
+                    <p class="text-justify mt-4 text-l">In an increasingly interconnected world, it becomes imperative
+                        to establish swift and efficient avenues for patients abroad to access the necessary care. Mere
+                        border crossings are no longer sufficient; what you need is an air ambulance service! Global Air
+                        Ambulances has been consistently delivering cross-border medical transportation services since
+                        1993. We understand the critical nature of their work, especially when lives hinge on the prompt
+                        arrival at hospitals or taking off within minutes after reaching the destination airport. Rather
+                        than enduring long waits outside the arrivals terminal alongside other frustrated travelers, we
+                        prioritize the urgency of situations where timely intervention can make a significant impact.
+                        <br><br>
+
+                        Our service goes beyond the swift transportation of patients. We prioritize superior quality and
+                        comfort throughout their journey. Patient care is our utmost priority, ensuring they reach their
+                        destination promptly and safely, even in challenging conditions such as bad weather or medical
+                        emergencies. We recognize the unique needs and preferences of each patient, leading us to
+                        customize non-emergency medical flights according to their specific requirements. Our seasoned
+                        representatives collaborate with you to ensure all necessary steps are taken to guarantee a
+                        seamless and tailored trip.<br><br>
+
+                        Cross-border transfers can relocate a patient from an unsafe country to one that is
+                        comparatively safer, and various methods can accomplish this. The predominant choice is
+                        typically through air ambulance services, as it proves to be the safest and most cost-effective
+                        option in terms of distance traveled compared to alternatives such as roadways or railways. This
+                        underscores the paramount importance of safety in such circumstances. <br><br>
+
+                        Global Air Ambulance is available to assist with your patient's documentation and COVID tests.
+                        We can facilitate their transportation across borders for a secure and expedited journey without
+                        putting a strain on your budget. Reach out to us today at (Number) or via email. <br><br>
+
+                        (Email) if this option aligns best with your requirements for international transfers.
+                    </p>
+
+
+
+                    <img class="mt-16" src="./airmalayasia images/m10.jpg" alt="">
+
+                </div>
+
+                <div class="text-white  font-sans ">
+
+                    <h1 class="text-4xl text-left mt-8">What Prompts Individuals to Utilize Air Ambulances?</h1>
+                    <p class="text-justify mt-4 text-l">Numerous air ambulance service providers operate worldwide.
+                        However, Bangladesh, being a developing country, currently lacks any air ambulance service
+                        providers. Consequently, in emergencies, individuals are required to cover their treatment
+                        expenses either from their own resources or through government funds. <br><br>
+
+                        In recent years, Shahjalal International Airport has undergone significant development and
+                        stands as the largest airport in the country. It is conveniently located near the capital city,
+                        Dhaka. The distance between the capital city Dhaka and the airport is <br><br>
+
+                        Bangladesh is classified as a developing country, and unfortunately, it ranks among the most
+                        challenging places globally for individuals facing illness or injury. The healthcare
+                        infrastructure is characterized by a shortage of quality hospitals, a limited number of trained
+                        medical professionals, scarce medical supplies, and poor road conditions. However, efforts have
+                        been underway in Dhaka, spearheaded by a small yet dedicated group, working tirelessly for many
+                        years to bring about positive changes and improvements.</p>
+                    <h1 class="text-4xl text-left mt-8">What Is the Price of International Air Ambulance Services?</h1>
+                    <p class="text-justify mt-4 text-l">The cost of international air ambulance services exhibits
+                        significant variability, contingent upon the type of service and the patient's medical
+                        condition. Typically, the higher the urgency in transporting them to their desired destination,
+                        the more likely the cost will escalate, taking into account various factors stacked upon each
+                        other. <br><br>
+
+                        The expenses associated with international air ambulance services may encompass fuel charges,
+                        which are contingent on the type of aircraft used. Additionally, there are landing fees and
+                        flyover permits, representing taxes levied by airports situated near takeoff/landing locations
+                        across global airspace per mile traveled by the plane. These costs also encompass medical
+                        supplies such as oxygen tanks, especially if required during the flight due to potential
+                        difficulties in breathing at high altitude levels. It's worth noting that some airlines now
+                        furnish their own life rafts on specific aircraft models. <br><br><br>
+
+
+
+                        Expenses for international airline medical escorts from Europe to New York can vary, ranging
+                        from $15,000 to $35,000. However, the costs significantly increase for air ambulance transports,
+                        potentially reaching as high as $100,000. By reaching out to our case managers with a single
+                        call, you can receive an accurate quote for services tailored to your requirements. Our
+                        efficient services aim to safely repatriate any patient from abroad within 24 hours after their
+                        initial contact with us.</p>
+
+
+
+                    <img class="mt-16" src="./airmalayasia images/m11.jpg" alt="">
+                    <h1 class="text-3xl text-left mt-4">Can Medicaid or Medicare Cover the Costs of International Air Ambulance?
+                    </h1>
+                    <p class="text-justify mt-4 text-l">Regrettably, Medicare and similar insurances like Tri-Care,
+                        operating under comparable guidelines, seldom cover the expenses for international air ambulance
+                        or medical commercial flights. Furthermore, Medicaid often does not provide coverage for
+                        long-distance patient transfers. It only extends coverage if the closest available care facility
+                        is deemed capable of attending to your needs, presenting a potential challenge when crossing
+                        borders, particularly with the involvement of high medication costs.
+                        <br><br>
+
+                        I trust this information proves beneficial for those requiring assistance with international
+                        transfers, ensuring a smoother process in delivering their loved ones safely to the necessary
+                        destinations.<br><br>
+
+                        If you require international patient transfer services, our dedicated team is ready to assist
+                        you. We specialize in managing out-of-pocket expenses and private insurance claims, and we are
+                        adept at handling any necessary paperwork with your provider. Feel free to reach out to us
+                        anytime at 800-948-1220 for assistance today! <br><br>
+
+                        If given the option to bear upfront costs personally or have them covered by insurance, I would
+                        unequivocally choose the latter. With Global Air Ambulance offering reasonable rates, there's no
+                        need to fret about unexpected expenses during emergencies. This ensures peace of mind, as
+                        everything is intended to proceed according to plan without any unforeseen financial burdens.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer class="bg-gray-800">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4  md:gap-6">
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold">Our Address</h1>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="home-outline"></ion-icon>
+                    <p>Flat 4D, House 11, Road 18, <br> Uttara (Sector-4), Dhaka, 1230</p>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="mail"></ion-icon>
+                    <a href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-4">Services</h1>
+                <div class="mt-8 ">
+                    <ul class="list-disc">
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Singapore</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Thailand</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to India</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Malayasia</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Maldivs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-8">Links</h1>
+                <div class="text-white ">
+                    <a href="">
+                        <p class="mt-4">Terms and Conditions</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Privacy Policy</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Terms of Use</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Disclaimer</p>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-12">Social Links</h1>
+                <div class="flex gap-2 mt-8">
+                    <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon  class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                    <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                    <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="container mx-auto p-2">
+        <p class="text-center text-white ">©2024 Air Ambulance Bangladesh LtdService.</p>
+    </div>
+    <script>
+         function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.remove('hidden')) : (e.name = "menu",list.classList.remove('top-[80px]'), list.classList.add('hidden')) 
+        }
+
+    </script>
+</body>
+
+</html>

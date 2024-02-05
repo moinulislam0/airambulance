@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html data-theme="dark ,light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Ambulace Bangladesh</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.jfif">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#header-content").load("./header.html");
+            $("#footer").load("./footer.html");
+        });
+    </script>
+    <style type="text/tailwindcss">
+
+/* .animated-color {
+  width: 100px;
+  height: 100px;
+  color: rgb(255, 255, 255);
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {color: rgb(255, 255, 255);}
+  to {color: rgb(14, 194, 254);}
+} */
+
+
+.animated-color {
+  width: 100px;
+  height: 100px;
+  color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  25%   {color: rgb(49, 247, 72);}
+  25%  {color: yellow;}
+  50%  {color: rgb(49, 179, 249);}
+  100% {color: rgb(255, 255, 255);}
+}
+        .submenu {
+            display: none;
+        }
+
+        :root {
+            --color-primary: #050505;
+            --color-primary-light: #d96cdb;
+            --secondary-color: #0a5c83;
+        }
+
+        /* Show the submenu when hovering over the parent element */
+        .group:hover .submenu {
+            display: block;
+        }
+
+        @keyframes carousel {
+            100% {
+                transform: translateX(-250);
+            }
+        }
+        @layer utilities{
+            .nav::after{
+                @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[5px] rounded-xl absolute
+            }
+            .nav:hover::after{
+                @apply w-[100%]
+            }
+        }
+        .scroll-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+
+        .scroll-text {
+            white-space: nowrap;
+            animation: scroll 10s linear infinite;
+        }
+
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            60% {
+                transform: translateX(30%);
+            }
+        }
+
+        .dropdown_item:hover .dropdown_arrow {
+            transform: rotate(180deg);
+        }
+    </style>
+
+</head>
+
+<body class="bg-black">
+    <div id="header-content"></div>
+    <div w3-include-html="./header.html"></div>
+    <header class=" bg-black p-4 mx-32 hidden lg:block">
+        <div class="container mx-auto text-white flex justify-between">
+             <div>
+                Air Ambulance Bangladesh Ltd
+            </div>
+            <div class="flex gap-3">
+                <div class="">
+                    <ion-icon class="text-white text-center text-2xl" name="mail-outline"></ion-icon>
+                </div>
+                <div>
+                    <a class="text-center" href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+            </div>
+            <div class="gap-2 flex">
+                <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="rounded sticky top-0 z-40 xl:z-50  bg-[var(--color-primary)] border-y-2 border-y-white-100">
+            <div class="flex  gap-4" style="justify-content: center; align-items: center;">
+
+
+                <img class="w-36 h-16 p-2  md:p-0 ml-[10px]" src="./images/logo.jfif" alt="">
+
+           
+
+                <!--  <div style="width: 550%; display: flex; justify-content: center;">
+                <button  class="relative bg-transparent mr-4 pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded"> 
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                    <div class="hidden md:block w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping"></div>
+                    <div class="hidden md:block w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping"></div>
+                </button>
+                </div> -->
+                <div style="width: 550%; display: flex; justify-content: center;">
+                    <button 
+                        class="relative bg-transparent  pointer-cursor hover:bg-purple-500 text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded">
+                        <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute top-0 left-0 animate-ping">
+                        </div>
+                        <div
+                            class=" w-6 h-6 bg-pink-800 rounded-full absolute bottom-0 right-0 animate-ping">
+                        </div>
+                    </button>
+                </div>
+
+                <div
+                    class="container mx-auto flex justify-end   bg-[var(--color-primary)] rounded-md   text-black xl:text-white ">
+                    <span
+                        class="text-3xl cursor-pointer p-[5px] m-[5px] hover:border-dotted bg-zinc-700 text-white xl:hidden">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+
+                    </span>
+                    <ul
+                        class="uppercase nav1 xl:flex xl:items-center mx-8 p-4 z-[-1]
+                         xl:z-auto xl:static absolute bg-white xl:bg-[var(--color-primary)] w-full 
+                          letf-0 xl:w-auto xl:py-0 my-4 pl-8 xl:pl-0   xl:opacity-100 hidden  xl:text-middle trasition-all easein doration-500 m-[5px] ">
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="index.html">
+                                <p class="whitespace-nowrap">home</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group ">
+                            <a
+                                class="dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 ">
+                                <div class="flex gap-1 ">
+                                    <p class="whitespace-nowrap cursor-pointer">Service</p>
+                                </div> <ion-icon class="dropdown_arrow " name="chevron-up-outline"></ion-icon>
+                            </a>
+
+                            <div style="z-index: 99;"
+                                class="xl:absolute xl:bg-black text-black xl:text-white text-lg  w-64 drop-shadow-md ml-4 xl:ml-auto">
+                                <ul class="space-y-4 xl:w-56 group-hover:block submenu  p-2 ">
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdhaka.html
+                                        ">air ambulance in dhaka</a>
+
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airsingapore.html">air ambulance in Singapore</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airthailand.html">air ambulance in Thailand</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airmalayasia.html">air ambulance in Malayasia</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airindia.html">air ambulance in india</a>
+                                    </li>
+                                    <li><a class="text-[15px] whitespace-nowrap hover:underline hover:underline-offset-4"
+                                            href="airdomestic.html">air helicopter Domestic</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="aircraft.html">
+                                <p class="whitespace-nowrap">AIRCRAFTS</p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="domestic.html">
+                                <p class="whitespace-nowrap">Domestic </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="international.html">
+                                <p class="whitespace-nowrap">International </p>
+                            </a>
+
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group">
+                            <a class=" dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 nav"
+                                href="about.html">
+                                <p class="whitespace-nowrap">about us </p>
+                            </a>
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="client.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">client
+                                    <p></p>
+                                </div>
+                            </a>
+
+
+                        </li>
+                        <li class="mr-2 md:my-0 relative group"><a
+                                class=" dropdown_item text-md  decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)]  p-2 nav"
+                                href="blog.html">
+                                <div class="flex gap-1">
+                                    <p class="whitespace-nowrap ">blog </p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mr-2 md:my-0 relative group "><a
+                                class="  dropdown_item text-md decoration-500 flex font-bold xl:hover:bg-[var(--color-primary)] items-center  p-2 lg:nav"
+                                href="contact.html">
+                                <p class="whitespace-nowrap">contact us</p>
+                            </a>
+
+                    </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="container mx-auto  ">
+            <div class="flex justify-center items-center mt-24" style="width: 100%;">
+                <img src="./read1/1.jpg" alt="">
+            </div>
+            <div class="justify-center mt-12 xl:px-32 2xl:px-64">
+                <h1 class="text-white text-left text-black text-3xl font-medium ">A comprehensive guide to air ambulance services in Thailand.</h1>
+                <p class=" mt-8 text-white text-xl "><a class="hover:text-yellow-500" href="">Leave a
+                        Comment</a> / <a class="hover:text-yellow-500" href="airambulance.html"> Air Ambulance</a> / By
+                    <br> <br> <br>
+
+                    Air ambulance services in Thailand operate 24 hours a day, seven days a week. They have been in
+                    operation for over "<a class="text-gray-900 hover:text-yellow-500"
+                        href="https://www.researchgate.net/publication/271596009_An_emergency_medical_service_system_in_Thailand_providers'_perspectives">20
+                        years</a> and have become
+                    very popular in the country. <br><br><br>
+
+                    Air ambulance services in Thailand play a crucial role as the primary responders to emergencies.
+                    They serve as a vital link between medical care and the injured person's home. <br><br><br>
+
+                    Due to the stringent regulations imposed by the government, only the Thai government air ambulance
+                    is officially recognized. While the healthcare system in Thailand is efficient and provides free
+                    services, it can be somewhat complex. Despite the presence of numerous hospitals and doctors in
+                    every city, many individuals opt for private hospitals or private practitioners.<br><br>
+
+                    In the capital city of Bangkok, there are also public hospitals. Individuals often make their way to
+                    the hospital independently in the case of serious injuries resulting from accidents or when there
+                    isn't a family member available at home to assist them. Thailand has various types of hospitals,
+                    including private clinics where doctors and nurses employ advanced imaging techniques to diagnose
+                    medical conditions.
+                </p>
+                <h1 class="text-white text-left text-black text-5xl font-medium mt-12">The Most Exquisite Air Ambulance Services in Thailand.</h1>
+                <p class="text-white text-xl mt-12">The most beautiful <a class="text-gray-900 hover:text-yellow-500"
+                        href="https://en.wikipedia.org/wiki/Air_medical_services">air ambulance</a> Healthcare services
+                    in Thailand provide their patients with top-notch care and service. They maintain a level of
+                    professionalism and prestige that is challenging to surpass. <br><br>
+                    This sets them apart from others, even in instances where they are unable to offer the finest
+                    medical care.
+                    <br><br>
+
+                    While air ambulance services in Thailand typically come with a high cost, they come with numerous
+                    advantages for those with the financial means to avail themselves of these services.
+                </p>
+                <h1 class="text-white text-left text-black text-5xl font-medium mt-12">Which air ambulance services in Thailand are considered the most beautiful?</h1>
+                <p class="text-white text-xl mt-12">Thailand stands as a sought-after tourist destination, renowned as
+                    one of the most picturesque places globally. It boasts stunning beaches, islands, and natural
+                    attractions that captivate visitors. <br><br>
+
+                    The <a class="text-gray-900 hover:text-yellow-500" href="airthailand.html">air ambulance service</a>
+                    The tourism industry in Thailand is experiencing continuous growth, gaining popularity among
+                    visitors. Moreover, numerous helicopter services offer diverse transportation options for
+                    individuals seeking swift travel between different locations.
+                </p>
+                <h1 class="text-white text-left text-black text-2xl font-extrabold mt-12">Air ambulance services in Thailand are categorized into two groups: </h1>
+
+            </div>
+            <div class="flex justify-center items-center mt-4">
+                <img src="./read1/2 png.png" alt="">
+            </div>
+            <div class="justify-center mt-12  xl:px-32 2xl:px-64 text-xl text-white">
+                <ul class="list-disc ml-16">
+                    <li>Private</li>
+                    <li><a href="https://www.thaiscience.info/journals/Article/JHRE/10987728.pdf">Public</a></li>
+                </ul>
+                <p class=" mt-8 text-white text-xl ">Helicopter services are offered by private companies, while public
+                    ones are available through hospitals or military bases. <br><br>
+
+                    The helicopter services provided by the Royal Thai Air Force (Thai Airways) and its affiliated
+                    companies stand out as the most favored. Each company presents a variety of helicopter types,
+                    ranging from those equipped with fixed-wing engines to those with jet propulsion. <br><br>
+
+                    Helicopters find application in various scenarios, such as medical emergencies, business travel,
+                    rescue operations, short-distance air ambulance transport for critically injured individuals, and
+                    other purposes. In 2013, the Thai government mandated the use of helicopters for formal marriages.
+                    <br><br>
+
+                    This has stirred controversy as private helicopters are not obligated to adhere to this regulation.
+                    The primary benefit of a helicopter lies in its capacity to observe both below and over water, as
+                    well as above trees and foliage. Nevertheless, helicopters necessitate the expertise of a qualified
+                    pilot capable of landing at specified locations during emergencies.
+                </p>
+                <h1 class="text-white text-left text-black text-4xl font-bold mt-8">What advantages and features come with selecting an air ambulance service in Thailand?</h1>
+            </div>
+            <div class="flex justify-center items-center mt-4">
+                <img src="./read1/3.jpg" alt="">
+            </div>
+            <div class="justify-center mt-4 xl:px-32 2xl:px-64 text-white">
+                <p>Air Ambulance Services in Thailand offer a wide range of <a
+                        class="text-gray-900 hover:text-yellow-500" href="airthailand.html">benefits</a> and features.
+                    These include the
+                    following:</p>
+
+                <ul class="list-disc ml-12 mt-4">
+                    <li>Medical care</li>
+                    <li>24/7 emergency services</li>
+                    <li>Rapid response time</li>
+                    <li>Long distance transportations</li>
+                    <li>On-site medical care</li>
+
+                </ul>
+                <h1 class="text-white text-left text-black text-4xl font-bold mt-8">Which air ambulance services are considered the best in Bangkok?</h1>
+            </div>
+            <div class="flex justify-center items-center mt-4">
+                <img src="./read1/4.jpg" alt="">
+            </div>
+            <div class="justify-center mt-4 xl:px-32 2xl:px-64 text-white">
+                <p>Bangkok, renowned for its grand temples and vibrant nightlife, is a city filled with numerous
+                    attractions. In such a remarkable metropolis, the presence of a dependable air ambulance service is
+                    essential, ensuring swift and expert transportation to the hospital when needed.</p>
+
+                <ul class="list-disc ml-12 mt-4">
+                    <li>Air Ambulance Services in Bangkok:</li>
+                    <li>Thai Air Ambulance Service:</li>
+                    <li>Bangkok Air Ambulance Service:</li>
+                    <li>Royal Thai Air Force (RTAF) Emergency Medical Services:</li>
+                    <li>BMA Emergency Medical Transport Service – BMA:</li>
+
+                </ul>
+                <h1 class="text-white text-left text-black text-4xl font-bold mt-8">How to Find an Affordable and
+                    Reliable Helicopter Service Provider?</h1>
+            </div>
+            <div class="flex justify-center items-center mt-4">
+                <img src="./read1/5.jpg" alt="">
+            </div>
+            <div class="justify-center mt-4 xl:px-32 2xl:px-64 text-white">
+                <p>In this article, I will outline the key five elements that can assist you in discovering a...<a
+                        class="text-gray-900 hover:text-yellow-500" href="index.html">rIdentifying a trustworthy
+                        helicopter service provider used to be a time-consuming task. However, with the abundance of
+                        resources available today, tasks that once took considerable time and effort can now be
+                        accomplished within 24-48 hours (depending on complexity). In this article, I will promptly
+                        share the top five factors that can assist you in swiftly finding a dependable helicopter
+                        services provider..</p>
+                <h1 class="text-white text-left text-black text-1xl font-bold mt-8">1. Are you receptive to instructions?</h1>
+                <p class="mt-8 text-l">
+                    Helicopter service providers specializing in standard aerial shots cannot match the quality of
+                    aerial photos captured by professionals trained in a pilot training school. If your company requires
+                    the expertise of a seasoned photographer with a vast portfolio of thousands of aerial shots, it is
+                    imperative to seek out a well-regarded helicopter services provider.
+                </p>
+                <h1 class="text-white text-left text-black text-1xl font-bold mt-8">2. Do they depend solely on skilled contractors?</h1>
+                <p class="mt-8 text-l">
+                    Helicopter service providers opting to collaborate solely with individuals not holding USCR status
+                    (Un-certified Professional Contractors) will not deliver superior aerial photos compared to those
+                    provided by certified users.
+                </p>
+                <h1 class="text-white text-left text-black text-1xl font-bold mt-8">3. Do they assess and rate their services?</h1>
+                <p class="mt-8 text-l">
+                    Helicopter service providers determine their service rates based on the fees for the aerial photos
+                    supplied to clients. A reputable helicopter photographer will refrain from requesting payment at the
+                    project's outset and will only charge you upon the successful completion of the job.
+                </p>
+                <h1 class="text-white text-left text-black text-1xl font-bold mt-8">4. Is their delivery prompt and efficient? </h1>
+                <p class="mt-8 text-l">
+                    The top-tier helicopter service providers are distinguished by their ability to deliver aerial
+                    photos within a 24-hour timeframe. Helicopter photographers requiring more than a day to provide
+                    their aerial photos are often deemed unreliable, as they tend to operate in hectic and congested
+                    locations due to urgent client demands. Considerably, superior quality aerial photos typically come
+                    at a higher cost compared to more budget-friendly options.
+                </p>
+                <h1 class="text-white text-left text-black text-1xl font-bold mt-8">5. Do they furnish you with tracking information that is both high-quality and reliable? </h1>
+                <p class="mt-8 text-l">
+                    Photographers on platforms like eBay may present more affordable and widely embraced alternatives to
+                    their services. However, if an aerial photo is the sole element you require to enhance your
+                    experience, their services are likely sufficient. If you find yourself weary of the routine tracks,
+                    photographs, and images of your helicopter, their offerings should bring contentment, given the
+                    minimal distinctions between them.
+                </p>
+                <h1 class="text-5xl font-bold mt-8">The Evolution of Healthcare Through Air Ambulance Services in Thailand.</h1>
+            </div>
+            <div class="flex justify-center items-center mt-4">
+                <img src="./read1/6.jpg" alt="">
+            </div>
+            <div class="justify-center mt-4 xl:px-32 2xl:px-64 text-white">
+                <p class="text-xl">The air ambulance services in Thailand constitute a multi-billion dollar industry,
+                    extending medical assistance to those in need. The demand for their services is on the rise, and
+                    they are anticipated to achieve a significant milestone. <a
+                        class="text-gray-900 hover:text-yellow-500"
+                        href="https://www.globenewswire.com/en/news-release/2022/05/18/2445710/0/en/Air-Ambulance-Service-Market-to-Worth-USD-10-30-Billion-by-2029-Rising-Prevalence-of-Chronic-Diseases-to-Fuel-Market-Growth.html">10
+                        billion dollars</a>
+                    by 2020. <br><br>
+
+                    In response to this, the government has opted to initiate a new program established in 2017 aimed at
+                    enhancing its effectiveness and efficiency. The primary goal of the program is to ensure a fleet of
+                    over 1,500 ambulances available at all times, facilitating their ability to respond to emergencies
+                    anywhere in the country within 24 hours. <br><br>
+
+                    Furthermore, they will have the capacity to deliver medical aid to individuals in need, irrespective
+                    of their location. The objective is to ensure that all populations have access to essential
+                    resources such as oxygen and lighting. The program is structured in five phases, commencing with a
+                    pilot project featuring 25 ambulances at the outset of 2018, with plans for expansion in the
+                    subsequent years.</p>
+                <h1 class="text-5xl font-bold mt-8">What constitutes an air ambulance service? What attributes contribute to their popularity?</h1>
+                <p class="text-xl mt-4">An air ambulance service is a critical medical transport offering emergency
+                    medical assistance. The proliferation of air ambulances in Thailand is occurring at an unprecedented
+                    pace, making them a highly sought-after service for prompt medical treatment.
+
+                    These air ambulances are particularly prevalent in rural or underserved areas where access to
+                    conventional medical facilities is limited. In regions with scant medical care options, individuals
+                    often opt for air ambulance services due to their ability to provide swift assistance.
+
+                    In Thailand, various types of air ambulances are available, including loaner airplanes. These
+                    powered aircraft are leased to individuals, some of which are owned by helicopter companies in
+                    Thailand. These airplanes serve both short-term and long-term transportation needs, enabling the
+                    rapid transfer of patients undergoing emergency medical treatment from one location to another
+                    within minutes.</p>
+                <h1 class="text-5xl font-bold mt-8">The Transformation of the Healthcare Industry by Air Ambulance Services
+                </h1>
+            </div>
+            <div class="flex justify-center items-center mt-4">
+                <img src="./read1/7.jpg" alt="">
+            </div>
+            <div class="justify-center mt-4 xl:px-32 2xl:px-64 text-white">
+                <p class="text-xl mt-4">In our contemporary world, the Internet and mobile devices have become integral
+                    aspects of our daily lives. Being constantly on the move has become a commonplace experience,
+                    whether it's commuting to work, going out for dinner, or simply taking a coffee break, as we
+                    navigate through the day from morning to night.
+                    <br><br>
+
+                    While the constant movement can be advantageous in discovering new job opportunities or securing
+                    employment, the flip side of this situation is that perpetual mobility may lead to stress and
+                    anxiety. <br><br>
+
+                    This is the reason why many individuals choose Air Ambulance Services for emergency medical
+                    assistance in the event of an accident or crisis. In times of need during accidents, they reach out
+                    to their Air Ambulance Service, which promptly comes to their aid.
+                </p>
+                <h1 class="text-5xl font-bold mt-8">What distinguishes the distinctive value of an air ambulance service in Thailand?
+                </h1>
+
+            </div>
+            <div class="flex justify-center items-center mt-4">
+                <img src="./read1/8.jpg" alt="">
+            </div>
+            <div class="justify-center mt-4 xl:px-32 2xl:px-64 text-white">
+                <p class="text-xl mt-4">The air ambulance service provider in Thailand is known as "Air Ambulance
+                    Service Thais" (AAST), established in 1982. AAST stands as the foremost and largest provider of air
+                    ambulance services in Thailand.
+
+                    Recognized as the largest air ambulance service provider in the country, AAST is comparable to
+                    similar services found in numerous other nations, both locally and internationally. In the past, the
+                    challenge lay in locating a dependable and reasonably priced air ambulance service. AAST emerged as
+                    one of the companies that successfully delivered reliable and affordable emergency medical services
+                    across Thailand.</p>
+                <h1 class="text-5xl font-bold mt-8">Selecting an Air Ambulance Service in Thailand with Diligence
+                </h1>
+
+            </div>
+            <div class="flex justify-center items-center mt-4">
+                <img src="./read1/9.jpg" alt="">
+            </div>
+            <div class="justify-center mt-4 xl:px-32 2xl:px-64 text-white">
+                <p class="text-xl mt-4">The main aim of this article is to help you choose an <a
+                        class="text-gray-900 hover:text-yellow-500" href="airthailand.html">air ambulance service </a>in
+                    Thailand with care. With the changing of the world, human society has developed and changed.
+                    <br><br>
+
+                    Nevertheless, the products and services utilized by human society have not evolved significantly.
+                    Consequently, the current products and services continue to rely on outdated technology. For
+                    instance, in Thailand, we still lack an air ambulance service with the level of care that could have
+                    a more profound impact on our lives than ever before, despite the advancements in technology.
+                    <br><br>
+                    Hence, individuals have the opportunity to enhance their lives significantly by engaging the
+                    services of a registered air ambulance service in Thailand that prioritizes care. These air
+                    ambulance services in Thailand are offered by registered medical aid societies, focusing primarily
+                    on providing free medical assistance. <br><br>
+
+                    Nevertheless, since there are no regulations specifying the quantity of registered medical aid
+                    societies in Thailand, individuals must select an air ambulance service provider that meets societal
+                    standards and delivers air ambulance services with due care. <br><br>
+
+                    For instance, certain individuals opt for a registered medical aid society due to the inclusion of
+                    private vehicle insurance coverage and the availability of hospitals in close proximity to their
+                    residences. Others choose a registered medical aid society to access air ambulance services provided
+                    by international organizations, such as ATS.
+                </p>
+                <h1 class="text-5xl font-bold mt-8">Preventing Unpleasant Experiences with an Air Ambulance Service in Thailand
+                </h1>
+                <p class="text-xl mt-4">The efficiency of Air Ambulance Services in Thailand falls short of its
+                    potential due to suboptimal equipment and inconsistent availability. <br><br>
+
+                    Air ambulance services in Thailand are renowned for their professionalism and elevated standards of
+                    care. Nevertheless, there are instances where they may not meet clients' expectations. Hence, it is
+                    crucial to acknowledge that certain services may fall short of the desired excellence. <br><br>
+
+                    The Thai Air Ambulance Service (TAS) holds the distinction of being one of the longest-standing air
+                    ambulance services globally, having been founded in 1947. Since its inception, it has consistently
+                    delivered medical services to the local community. As of October 2010, TAS boasted a dedicated team
+                    of 4,000 volunteers and a fleet of 14 medical aircraft under its ownership. <br><br>
+
+                    The paramedics are exclusively trained for medical treatment and lack a background in emergency
+                    medicine. At Bangkok International Airport, a workforce of 2,600 individuals serves as security
+                    staff, diligently safeguarding against any attempts by outsiders to cause harm or damage to airports
+                    and aircraft.</p>
+                <h1 class="text-5xl font-bold mt-8">Consider Having a Routine Flight Medic Check for Your Health &
+                    Safety
+                </h1>
+
+            </div>
+            <div class="flex justify-center items-center mt-4">
+                <img src="./read1/10.jpg" alt="">
+            </div>
+            <div class="justify-center mt-4 xl:px-32 2xl:px-64 text-white">
+                <p class="text-xl">The <a class="text-gray-900 hover:text-yellow-500"
+                        href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/guidance-documents/medical-evacuation-aircraft-patients-suspected-confirmed-covid-19-remote-isolated-communities-canada-north.html">health
+                        and safety</a>Ensuring the well-being of passengers stands as a paramount concern for airlines.
+                    It is imperative for them to guarantee the safety of the aircraft for all passengers, necessitating
+                    the presence of sufficient medical staff to address emergency situations. <br><br>
+
+                    The medical staff on an aircraft undergo training to handle such situations. Their skills include
+                    administering first aid, assisting in emotional management, and delivering appropriate treatment to
+                    patients. Jetairfly is a renowned air charter company that operates within the same industry,
+                    offering a diverse range of services.<br><br>
+
+                    In addition to being one of India's largest aviation companies, Jetairfly possesses ownership of
+                    three other aircraft firms, namely Pinnacle International and Leisure Aviation Ltd. This is evident
+                    through their status as joint-venture partners with Jet. <br><br>
+
+                    The airline offers a diverse range of services and products, including discounted fares tailored for
+                    tourists, students, children, and retirees. Additionally, they have been providing aero ply.</p>
+
+
+            </div>
+            <div class="justify-center mt-36 xl:px-32 2xl:px-64 text-white">
+                <a class="flex gap-2" href="read1.html">
+                    <ion-icon class="text-xl mt-1" name="arrow-back-outline"></ion-icon>
+                    <p class="text-xl mb-4">Previous Post</p>
+                </a>
+                <!-- <p class="text-2xl font-bold mt-28">Leave a Comment</p>
+                <p class="text-xl text-gray-900 mt-4">Your email address will not be published. Required fields are
+                    marked *</p>
+                <div class="mt-4">
+
+                    <input type="text" id="message" class="  hover:border-dotted w-full h-72  "
+                        placeholder="Type here....">
+                </div>
+                <div class="grid grid-cols-3 gap-12 mt-4">
+                    <div>
+
+                        <input type="text" id="name"
+                            class="border hover:border-dotted w-full text-base px-2 py-4 focus:outline-none focus:ring-0 focus:border-gray-600 "
+                            placeholder="Name*">
+                    </div>
+                    <div mt-4>
+
+                        <input type="text" id="email"
+                            class="border hover:border-dotted w-full text-base px-2 py-4 focus:outline-none focus:ring-0 focus:border-gray-600 "
+                            placeholder="Email*">
+                    </div>
+                    <div mt-4>
+
+                        <input type="text" id="websites"
+                            class="border hover:border-dotted w-full text-base px-2 py-4 focus:outline-none focus:ring-0 focus:border-gray-600 "
+                            placeholder="Websites">
+                    </div>
+                </div>
+                <div class="flex gap-2 mt-8">
+
+                    <input type="checkbox" class="checkbox checkbox-error mt-2" />
+                    <p class="text-gray-700 text-xl">Save my name, email, and website in this browser for the next time
+                        I comment.</p>
+                </div>
+                <button class="bg-white text-center text-black p-4 mt-8">POST COMMENT >></button> -->
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-gray-800 mt-8">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4  md:gap-6">
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold">Our Address</h1>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="home-outline"></ion-icon>
+                    <p>Flat 4D, House 11, Road 18, <br> Uttara (Sector-4), Dhaka, 1230</p>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon class="text-white" name="mail"></ion-icon>
+                    <a href = "mailto: info@airambulancebangladesh.com">info@airambulancebangladesh.com</a>
+                </div>
+                <div class="flex gap-3 text-white mt-4">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <a class="animated-color animate-bounce" href="tel:01727587092">+8801727587092</a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-4">Services</h1>
+                <div class="mt-8 ">
+                    <ul class="list-disc">
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Singapore</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Thailand</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to India</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Malayasia</li>
+                        <li class="mt-2 whitespace-nowrap">Dhaka to Maldivs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 p-8">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-8">Links</h1>
+                <div class="text-white ">
+                    <a href="">
+                        <p class="mt-4">Terms and Conditions</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Privacy Policy</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Terms of Use</p>
+                    </a>
+                    <a href="">
+                        <p class="mt-4">Disclaimer</p>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 p-8 text-white ">
+                <h1 class="text-white text-2xl lg:text-4xl font-bold mt-12">Social Links</h1>
+                <div class="flex gap-2 mt-8">
+                    <a href="https://www.facebook.com/airambulancedhaka?mibextid=LQQJ4d" target="_blank"><ion-icon  class="w-8 h-6 bg-sky-700" name="logo-facebook"></ion-icon></a>
+                    <!-- <ion-icon class="w-8 h-6 bg-sky-400" name="logo-twitter"></ion-icon>
+                    <ion-icon class="w-8 h-6 bg-rose-500" name="logo-instagram"></ion-icon> -->
+                    <a href="https://youtube.com/@airambulancebangladesh2143?si=7gULkDO5I3xmbFm-" target="_blank"><ion-icon class="w-8 h-6 bg-red-600 " name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="container mx-auto p-2">
+        <p class="text-center text-white ">©2024 Air Ambulance Bangladesh LtdService.</p>
+    </div>
+    <script>
+         function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.remove('hidden')) : (e.name = "menu",list.classList.remove('top-[80px]'), list.classList.add('hidden')) 
+        }
+
+    </script>
+</body>
+
+</html>
